@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config.js';
+---
+
+<Base title="Editorial Policy | CleanDraft" description="How CleanDraft guides are written, checked and corrected, how we handle examples and affiliate links, and what we will not publish.">
+  <article class="page">
+    <h1>Editorial policy</h1>
+    <p class="byline">Last updated {SITE.updated}.</p>
+    <h2>What we publish</h2>
+    <p>We publish practical guides on editing AI-assisted writing. Each one needs something a reader can use: a before-and-after example, a checklist or a clear method.</p>
+    <h2>How guides are checked</h2>
+    <ul>
+      <li>A person reviews every guide before it goes live and stands behind it.</li>
+      <li>Claims about research or products link to a source where one exists. Where evidence is thin, we say so.</li>
+      <li>Examples in guides are written to illustrate a point. They are not customer data.</li>
+      <li>Before-and-after examples show what the rules can do. We don't present them as guaranteed results.</li>
+      <li>Guides show a last-updated date, and we revisit them as assistant writing styles change.</li>
+    </ul>
+    <h2>What we won't publish</h2>
+    <p>We don't publish advice on passing off work dishonestly, instructions for beating named detectors, or claims that any output is "undetectable". We don't offer essay writing or assignment services.</p>
+    <h2>Money</h2>
+    <p>The site earns from advertising. If a page ever carries affiliate links, it will say so clearly. Advertisers and partners have no say over what we write.</p>
+    <h2>Corrections</h2>
+    <p>Found a mistake? <a href="/contact">Tell us</a>. We fix errors promptly and note significant corrections on the page.</p>
+  </article>
+</Base>

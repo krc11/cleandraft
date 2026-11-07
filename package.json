@@ -1,0 +1,21 @@
+{
+  "name": "cleandraft",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "test": "node --test tests/engine.test.js",
+    "test:golden:update": "node tests/update-golden.js",
+    "test:privacy": "node tests/privacy.test.js"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.8"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}

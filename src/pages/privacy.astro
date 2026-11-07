@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config.js';
+---
+
+<Base title="Privacy Policy | CleanDraft" description="How CleanDraft handles your text and data. The tool runs on your device and we never send your text anywhere. Details on cookies, ads, analytics and your rights.">
+  <article class="page">
+    <h1>Privacy policy</h1>
+    <p class="byline">Last updated {SITE.updated}.</p>
+    <h2>Your text</h2>
+    <p>The tool runs on your device and we never send your text anywhere. Our code doesn't store what you paste or the edited result, and neither is used for training. When you close or reload the page, your text is gone unless you saved it. Your tone, strength and spelling choices are kept in your browser for the current session so you don't have to set them again.</p>
+    <h2>What ad and analytics scripts can do</h2>
+    <p>Like most ad-supported sites, this site may load third-party scripts on the same page as the tool. Our code doesn't give them your text. They can collect information about your visit in the ways described below.</p>
+    <h2>Advertising and cookies</h2>
+    <p>This site may show ads from Google AdSense. Google and its partners use cookies to serve ads based on your visits to this and other sites. You can manage this in <a href="https://www.google.com/settings/ads" rel="noopener">Google Ads Settings</a> and read about it in <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">how Google uses information from partner sites</a>. Visitors in the EEA, the UK and Switzerland see a consent message before personalized ads are served.</p>
+    <h2>Usage measurements</h2>
+    <p>If we measure tool use, we record only word count, tone, strength, spelling variant, edit count, timing, rule ids from "This edit is wrong", and approximate country, and we keep logs for 30 days. These never include your text. Our hosting provider also keeps standard server logs, such as IP addresses, for security.</p>
+    <h2>Email</h2>
+    <p>If you email us, we keep your message and address for as long as we need them to deal with your request.</p>
+    <h2>Your rights</h2>
+    <p>Depending on where you live, including under GDPR and UK GDPR, US state privacy laws, Canada's PIPEDA and Australia's Privacy Act, you may be able to access, correct or delete your personal data, or object to or opt out of certain uses, including the sale or sharing of personal information for advertising. We do not sell your text. To make a request, email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.</p>
+    <h2>Children</h2>
+    <p>This site isn't directed at children under 13, and we don't knowingly collect their personal data.</p>
+    <h2>Changes</h2>
+    <p>We'll update this page when our practices change and revise the date above.</p>
+  </article>
+</Base>

@@ -1,0 +1,14 @@
+---
+import { SITE } from '../config.js';
+const { slot } = Astro.props;
+const id = SITE.adSlots[slot];
+---
+
+{SITE.adsenseClient && id && (
+  <aside class="ad-slot" aria-label="Advertisement">
+    <p class="ad-label">Advertisement</p>
+    <div class="ad-box">
+      <ins class="adsbygoogle" style="display:block" data-ad-client={SITE.adsenseClient} data-ad-slot={id} data-ad-format="auto" data-full-width-responsive="true"></ins>
+    </div>
+  </aside>
+)}

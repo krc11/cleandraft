@@ -1,0 +1,17 @@
+---
+import Base from '../../layouts/Base.astro';
+const modules = import.meta.glob('../../guides/*.md', { eager: true });
+const guides = Object.entries(modules)
+  .map(([path, m]) => ({ slug: path.split('/').pop().replace('.md', ''), ...m.frontmatter }))
+  .sort((a, b) => a.order - b.order);
+---
+
+<Base title="Guides to Editing AI Writing | CleanDraft" description="Practical guides on making AI drafts read naturally: phrases to avoid, editing checklists, adding your voice, and using AI honestly at school and work.">
+  <article class="page">
+    <h1>Guides to editing AI writing</h1>
+    <p class="lede">Practical methods with before-and-after examples. Written for people who already have a draft and want it to read better.</p>
+    <ul class="card-list">
+      {guides.map((g) => <li><a href={`/guides/${g.slug}`}>{g.title}</a><p>{g.description}</p></li>)}
+    </ul>
+  </article>
+</Base>

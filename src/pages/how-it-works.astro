@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE } from '../config.js';
+import { LEXICON_VERSION, RULE_COUNTS } from '../engine/lexicon.js';
+const total = Object.values(RULE_COUNTS).reduce((a, b) => a + b, 0);
+---
+
+<Base title="How CleanDraft Works: The Rules Behind Every Edit" description="CleanDraft is a rule-based editor, not an AI model. Here is each stage of the pipeline, what the rules change, what they protect, and where they fall short.">
+  <article class="page">
+    <h1>How CleanDraft works</h1>
+    <p class="byline">By {SITE.editor}. Last updated {SITE.updated}. Lexicon version {LEXICON_VERSION}.</p>
+    <p>CleanDraft is a rule-based editor. There is no language model anywhere in it. A small program runs in your browser and applies {total} written rules in a fixed order. Because every rule is written down, we can describe all of it here, and the tool can tell you why it made each edit.</p>
+
+    <h2>The eight stages</h2>
+    <ol>
+      <li><strong>Protect spans.</strong> Numbers, dates, names, URLs, emails, quotes, citations and code are locked, along with headings, tables and list markers. No later rule can touch them.</li>
+      <li><strong>Phrase lexicon.</strong> {RULE_COUNTS.openers} opener rules ("Moreover,"), {RULE_COUNTS.stock} stock phrases ("plays a crucial role in"), {RULE_COUNTS.plain} plain-language swaps ("utilize" to "use") and {RULE_COUNTS.adjectives} adjective swaps ("robust" to "strong").</li>
+      <li><strong>Contractions.</strong> "Do not" becomes "don't", at a rate set by tone. Guards keep it from firing where it would read badly, such as "that is what it is." Formal tone expands contractions instead.</li>
+      <li><strong>Dashes.</strong> Paired dashes become commas. A single dash becomes a comma or a new sentence.</li>
+      <li><strong>Sentence rhythm.</strong> Some opening phrases move to the end of the sentence ("In 2023, the team shipped it" to "The team shipped it in 2023"). At Strong, some long sentences split and some short ones join.</li>
+      <li><strong>Cleanup.</strong> Fixes "a" and "an", avoids the same opener twice in a row, and applies your English variant's spelling.</li>
+      <li><strong>Restore.</strong> The final text is your original plus the list of edits. That is why any one edit can be undone by itself.</li>
+      <li><strong>Validate.</strong> A separate checker compares the output with the original: numbers, URLs, quotes, citations and names must match, length must stay within 15%, and punctuation must not break. An edit that fails is reverted, and your original wording stays.</li>
+    </ol>
+
+    <AdSlot slot="B" />
+
+    <h2>What strength and tone change</h2>
+    <table>
+      <thead><tr><th>Strength</th><th>Rules used</th></tr></thead>
+      <tbody>
+        <tr><td>Light</td><td>Openers and stock phrases</td></tr>
+        <tr><td>Balanced</td><td>Light, plus plain-language swaps, contractions, dashes and some reordering</td></tr>
+        <tr><td>Strong</td><td>Balanced, plus adjective swaps, sentence splits and merges, and more reordering</td></tr>
+      </tbody>
+    </table>
+    <p>Natural tone uses the full contraction rate. Professional uses 55% of it. Formal adds none and expands the ones already there.</p>
+
+    <h2>Same input, same output</h2>
+    <p>Choices between replacements use a seeded random number. The first run always uses the same seed, so the same text, settings and lexicon version give the same output. Regenerate picks a new seed to get a different valid edit.</p>
+
+    <h2>What it can't do</h2>
+    <p>Rules can't understand your argument. CleanDraft won't restructure a piece, add examples, fix facts or give you a voice. It will miss phrasing that isn't in the lexicon, and it can occasionally make an awkward swap, which is why every edit has a one-tap revert. Rhythm is its weakest area. Sentence length barely changes on most text.</p>
+    <p>We don't test rules against AI detectors, and we make no promise about any detector's result.</p>
+
+    <h2>Where the rules come from</h2>
+    <p>Candidate phrases start from published research on excess vocabulary in AI-assisted writing, such as Kobak and colleagues' study of 15 million PubMed abstracts (<a href="https://arxiv.org/abs/2406.07016" rel="noopener">arXiv 2406.07016</a>), and from plain-language guidance such as the <a href="https://www.stylemanual.gov.au/" rel="noopener">Australian Style Manual</a>. We review feedback by rule and retire rules that draw complaints. Each rule has a stable id and is covered by automated tests.</p>
+
+    <h2>Privacy</h2>
+    <p>The tool runs on your device and we never send your text anywhere. The "This edit is wrong" button records only a rule id, never your text. See the <a href="/privacy">privacy policy</a> for how ads and cookies work on this site.</p>
+    <p><a href="/">Try the editor</a></p>
+    <AdSlot slot="D" />
+  </article>
+</Base>

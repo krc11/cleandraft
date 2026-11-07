@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { SITE } from '../../config.js';
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob('../../guides/*.md', { eager: true });
+  const all = Object.entries(modules).map(([path, mod]) => ({ slug: path.split('/').pop().replace('.md', ''), mod }));
+  return all.map(({ slug, mod }) => ({
+    params: { slug },
+    props: { mod, related: all.filter((g) => g.slug !== slug).sort((a, b) => a.mod.frontmatter.order - b.mod.frontmatter.order).slice(0, 3) },
+  }));
+}
+
+const { mod, related } = Astro.props;
+const { Content, frontmatter: fm } = mod;
+const headings = mod.getHeadings().filter((h) => h.depth === 2);
+const url = `${SITE.url}/guides/${Astro.params.slug}`;
+const ld = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: fm.title, description: fm.description, dateModified: '2026-11-04', author: { '@type': 'Organization', name: SITE.name }, mainEntityOfPage: url },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Guides', item: `${SITE.url}/guides` },
+      { '@type': 'ListItem', position: 2, name: fm.title, item: url },
+    ],
+  },
+];
+---
+
+<Base title={`${fm.title} | CleanDraft`} description={fm.description} jsonLd={ld}>
+  <article class="page">
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/guides">Guides</a></nav>
+    <h1>{fm.title}</h1>
+    <p class="byline">By {SITE.editor}. Last updated {SITE.updated}.</p>
+    <nav class="toc" aria-label="Contents">
+      <strong>In this guide</strong>
+      <ul>{headings.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ul>
+    </nav>
+    <Content />
+    <AdSlot slot="D" />
+    <h2>Try it on your draft</h2>
+    <p><a href="/">Open the free editor</a>. It removes stock phrasing, shows every edit and runs on your device.</p>
+    <h2>Related guides</h2>
+    <ul>{related.map((g) => <li><a href={`/guides/${g.slug}`}>{g.mod.frontmatter.title}</a></li>)}</ul>
+  </article>
+</Base>

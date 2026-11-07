@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config.js';
+---
+
+<Base title="About CleanDraft" description="CleanDraft is a free, rule-based editor for AI-written text. Learn what it is for, what we won't promise, and how the site is funded.">
+  <article class="page">
+    <h1>About CleanDraft</h1>
+    <p>CleanDraft is a free editor for text drafted with AI. Paste a draft, and it removes stock phrasing, loosens stiff wording and shows you every change with the reason for it. There's no signup and no paywall.</p>
+    <h2>Why we built it</h2>
+    <p>Most tools in this category send your text to a server, rewrite all of it, and hand back a result you can't easily check. We wanted the opposite: a small tool that runs on your own device, changes only what it can justify, and leaves the decisions to you.</p>
+    <h2>What we believe</h2>
+    <ul>
+      <li><strong>Show the work.</strong> Every edit is visible and can be undone by itself.</li>
+      <li><strong>Protect the facts.</strong> Numbers, names, quotes and citations aren't changed, and no new content is added.</li>
+      <li><strong>Be straight about limits.</strong> This is a light edit, not a rewrite, and it won't replace your own judgment.</li>
+      <li><strong>No detector promises.</strong> We help people write better. We don't claim to beat any detector, and we don't use tricks such as look-alike characters or planted typos.</li>
+    </ul>
+    <h2>How the site is funded</h2>
+    <p>CleanDraft is free because it costs very little to run. The work happens on your device, so there's no per-use bill. Advertising covers hosting and upkeep. Ads are labeled and are never placed inside the tool.</p>
+    <h2>Who is behind it</h2>
+    <p>Guides are written and reviewed by the {SITE.editor} under our <a href="/editorial-policy">editorial policy</a>. To reach us, see the <a href="/contact">contact page</a>.</p>
+  </article>
+</Base>

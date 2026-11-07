@@ -1,0 +1,65 @@
+---
+import Base from './Base.astro';
+import Tool from '../components/Tool.astro';
+import AdSlot from '../components/AdSlot.astro';
+import { SITE } from '../config.js';
+
+const { title, description, h1, lede, placeholder, faq = [] } = Astro.props;
+const app = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  name: SITE.name,
+  url: `${SITE.url}${Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '')}`,
+  applicationCategory: 'WritingApplication',
+  operatingSystem: 'Any',
+  browserRequirements: 'Requires JavaScript',
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+};
+const faqLd = faq.length
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faq.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })),
+    }
+  : null;
+---
+
+<Base title={title} description={description} jsonLd={faqLd ? [app, faqLd] : [app]}>
+  <div class="tool-wrap">
+    <header class="hero">
+      <p class="kicker">Free. No signup. Runs on your device.</p>
+      <h1>{h1}</h1>
+      <p class="lede">{lede}</p>
+    </header>
+    <Tool placeholder={placeholder} />
+    <ul class="promises">
+      <li><strong>Every edit shown</strong><span>See each change and the rule behind it, then undo any one you disagree with.</span></li>
+      <li><strong>Facts stay put</strong><span>Numbers, names, links, quotes and citations are locked before any rule runs.</span></li>
+      <li><strong>Your text stays here</strong><span>The tool runs on your device, and we never send your text anywhere.</span></li>
+    </ul>
+    <AdSlot slot="A" />
+  </div>
+  <article class="page">
+    <slot />
+    {
+      faq.length > 0 && (
+        <section>
+          <h2>Questions</h2>
+          {faq.map(([q, a]) => (
+            <>
+              <h3>{q}</h3>
+              <p>{a}</p>
+            </>
+          ))}
+        </section>
+      )
+    }
+    <AdSlot slot="D" />
+    <h2>Keep reading</h2>
+    <ul>
+      <li><a href="/guides/ai-phrases-to-avoid">AI phrases to avoid, and what to write instead</a></li>
+      <li><a href="/guides/ai-draft-editing-checklist">A 10-point checklist for editing an AI draft</a></li>
+      <li><a href="/how-it-works">How the editor works, rule by rule</a></li>
+    </ul>
+  </article>
+</Base>

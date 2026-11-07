@@ -1,0 +1,55 @@
+---
+import ToolPage from '../layouts/ToolPage.astro';
+import AdSlot from '../components/AdSlot.astro';
+
+const faq = [
+  ['Is CleanDraft really free?', 'Yes. There is no account, no credit card and no daily cap. Each run can take up to 10,000 words. The site is paid for by advertising.'],
+  ['Does it rewrite my whole text?', 'No. It is a light editor, not a rewriter. It changes only what a rule catches, so most of your words stay as they are, and every change is listed so you can check it.'],
+  ['Is my text sent to a server?', 'The tool runs on your device and we never send your text anywhere. It is not stored and it is not used to train anything. Ad and analytics scripts can load on the page like on any ad-supported site, but they do not receive your text from our code.'],
+  ['Will this get past an AI detector?', 'We make no promise about any detector. Detectors change often and their results vary. CleanDraft is built to make a draft read better, and rules are never tuned against detector scores.'],
+  ['Can I use it for school work?', 'Follow your school\'s rules on AI first. If AI assistance is allowed, CleanDraft can help you tidy your own draft. You are responsible for what you submit.'],
+];
+---
+
+<ToolPage
+  title="Free AI Text Humanizer, No Signup | CleanDraft"
+  description="Paste an AI draft and get a cleaner, more natural version in under a second. See every edit and why it was made. Free, no signup, and it runs on your device."
+  h1="Free AI text humanizer that shows every edit"
+  lede="Removes stock AI phrasing, adds contractions and varies some sentence openings, then shows you exactly what changed."
+  faq={faq}
+>
+  <h2>What this tool does</h2>
+  <p>
+    AI drafts tend to share the same habits: stock transitions at the start of every paragraph, long phrases where one word would do, and a stiff tone that avoids contractions. CleanDraft finds those habits and fixes them with a set of written rules. It works on your own words and adds no new facts or ideas.
+  </p>
+  <p>
+    Be clear about what that means. This is a careful copyedit, not a rewrite. If your draft is thin or wrong, it will still be thin or wrong after the edit. If it is sound but reads like a machine wrote it, the result should read noticeably cleaner, and you will still want to add your own examples and voice.
+  </p>
+
+  <AdSlot slot="B" />
+
+  <h2>A before and after</h2>
+  <blockquote><p><strong>Before:</strong> Moreover, it is important to note that regular feedback plays a crucial role in team performance. In order to achieve better results, managers should utilize a wide range of tools.</p></blockquote>
+  <blockquote><p><strong>After:</strong> Also, regular feedback is key to team performance. To achieve better results, managers should use all kinds of tools.</p></blockquote>
+  <p>Six edits, each one listed in the edit log with its reason. If you disagree with one, press "This edit is wrong" and only that edit goes back.</p>
+
+  <h2>Why every edit is visible</h2>
+  <p>
+    Language models can't explain why they changed a sentence, and they sometimes change a number or drop a detail along the way. A rules engine can show its work. Turn on <strong>Show changes</strong> to see removals struck through and additions underlined. Open the <strong>Edit log</strong> to read each change and the rule behind it.
+  </p>
+
+  <h2>What stays protected</h2>
+  <p>
+    Numbers, dates, names, URLs, email addresses, quoted text, citations and code are locked before any rule runs. Headings, tables and list numbering keep their place. A separate checker then compares the result with your original. If an edit breaks a check, that edit is undone and your original wording stays.
+  </p>
+
+  <h2>How to choose your settings</h2>
+  <ul>
+    <li><strong>Light</strong> only removes filler openers and stock phrases. Use it when your draft is close to done.</li>
+    <li><strong>Balanced</strong> also swaps stiff words for plain ones, adds contractions and simplifies dashes. It is the default.</li>
+    <li><strong>Strong</strong> also swaps overused adjectives and adjusts sentence length. Read the log more closely at this level.</li>
+    <li><strong>Tone</strong> sets contractions: Natural uses the most, Professional about half as many, and Formal expands the ones you already have.</li>
+    <li><strong>English</strong> matches US, UK, Canadian or Australian spelling.</li>
+  </ul>
+  <p>Not happy with the result? <strong>Regenerate</strong> gives an alternative valid edit, and <strong>Undo</strong> returns to the previous one. The same text, settings and seed always give the same output.</p>
+</ToolPage>

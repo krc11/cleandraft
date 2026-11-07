@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config.js';
+---
+
+<Base title="Contact CleanDraft" description="Contact CleanDraft about a bad edit, a correction to a guide, a privacy question or a report of misuse.">
+  <article class="page">
+    <h1>Contact</h1>
+    <p>Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>. We read everything and aim to reply within a few working days.</p>
+    <h2>Helpful details to include</h2>
+    <ul>
+      <li><strong>A bad edit:</strong> the sentence before and after, plus the tone and strength you used. The "This edit is wrong" button in the edit log is faster, but it records only a rule id, so email us if you want to explain.</li>
+      <li><strong>A correction to a guide:</strong> the page address and what needs to change.</li>
+      <li><strong>Privacy:</strong> your request and the country you are in.</li>
+      <li><strong>Abuse:</strong> if you think the site is being used for spam, scams or phishing, tell us what you saw.</li>
+    </ul>
+    <p>Please don't send us confidential text. We don't need it to help you.</p>
+  </article>
+</Base>

@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../config.js';
+---
+
+<Base title="Terms of Use | CleanDraft" description="The terms for using CleanDraft: acceptable use, no guarantee about any detector or platform, and your responsibility for what you submit or publish.">
+  <article class="page">
+    <h1>Terms of use</h1>
+    <p class="byline">Last updated {SITE.updated}.</p>
+    <p>By using {SITE.name} at cleandraft.online, you agree to these terms.</p>
+    <h2>The service</h2>
+    <p>{SITE.name} is a free, rule-based text editor that runs in your browser. We may change or stop it at any time.</p>
+    <h2>Acceptable use</h2>
+    <p>Don't use the site for anything unlawful, including spam, scams, phishing, or breaking the rules of your school or employer. Don't disrupt the site or scrape it in a way that harms it.</p>
+    <h2>Your responsibility</h2>
+    <p>You own your text. You are responsible for how you use the output and for what you submit or publish. Read the result before relying on it, because automated edits can be wrong or awkward.</p>
+    <h2>No guarantees</h2>
+    <p>The site is provided "as is", without warranties. We make no guarantee about the result of any AI detector, plagiarism checker, school, employer or platform.</p>
+    <h2>Liability</h2>
+    <p>To the extent the law allows, we aren't liable for losses arising from your use of the site.</p>
+    <h2>Content</h2>
+    <p>Guides and site content belong to {SITE.name}. You may quote short passages with a link back.</p>
+    <h2>Contact</h2>
+    <p>Questions? Email <a href={`mailto:${SITE.contactEmail}`}>{SITE.contactEmail}</a>.</p>
+  </article>
+</Base>

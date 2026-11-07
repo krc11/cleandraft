@@ -1,0 +1,1447 @@
+{
+ "lexiconVersion": "1.0.0",
+ "samples": {
+  "blog|natural|light|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies utilize blogs in order to reach new readers. Many teams have seen results — sometimes quickly — but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training prior to launch. It works well. It saves time.",
+  "blog|natural|light|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies utilise blogs in order to reach new readers. Many teams have seen results — sometimes quickly — but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training prior to launch. It works well. It saves time.",
+  "blog|natural|balanced|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers are able to leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It's a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well. It saves time.",
+  "blog|natural|balanced|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers are able to leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It's a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well. It saves time.",
+  "blog|natural|strong|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers can draw on simple tools.\n\nThe team shipped the new product line in the first quarter. It's a solid and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well, and it saves time.",
+  "blog|natural|strong|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers can draw on simple tools.\n\nThe team shipped the new product line in the first quarter. It's a solid and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well, and it saves time.",
+  "blog|professional|light|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies utilize blogs in order to reach new readers. Many teams have seen results — sometimes quickly — but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training prior to launch. It works well. It saves time.",
+  "blog|professional|light|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies utilise blogs in order to reach new readers. Many teams have seen results — sometimes quickly — but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training prior to launch. It works well. It saves time.",
+  "blog|professional|balanced|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers are able to leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It's a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well. It saves time.",
+  "blog|professional|balanced|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers are able to leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It's a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well. It saves time.",
+  "blog|professional|strong|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers can draw on simple tools.\n\nThe team shipped the new product line in the first quarter. It's a solid and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well, and it saves time.",
+  "blog|professional|strong|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they don't always measure them. The vast majority of writers can draw on simple tools.\n\nThe team shipped the new product line in the first quarter. It's a solid and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well, and it saves time.",
+  "blog|formal|light|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies utilize blogs in order to reach new readers. Many teams have seen results — sometimes quickly — but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training prior to launch. It works well. It saves time.",
+  "blog|formal|light|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies utilise blogs in order to reach new readers. Many teams have seen results — sometimes quickly — but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training prior to launch. It works well. It saves time.",
+  "blog|formal|balanced|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well. It saves time.",
+  "blog|formal|balanced|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs in order to reach new readers. Many teams have seen results, sometimes quickly, but they do not always measure them. The vast majority of writers can leverage simple tools.\n\nIn the first quarter, the team shipped the new product line. It is a robust and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well. It saves time.",
+  "blog|formal|strong|us": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs to reach new readers. Many teams have seen results, sometimes quickly, but they do not always measure them. The vast majority of writers can draw on simple tools.\n\nThe team shipped the new product line in the first quarter. It is a solid and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well, and it saves time.",
+  "blog|formal|strong|uk": "In today's fast-paced world, content marketing plays a vital role in business growth. Also, all kinds of companies use blogs to reach new readers. Many teams have seen results, sometimes quickly, but they do not always measure them. The vast majority of writers can draw on simple tools.\n\nThe team shipped the new product line in the first quarter. It is a solid and comprehensive system, and the company uses it on a daily basis. Still, this requires additional training before launch. It works well, and it saves time.",
+  "email|natural|light|us": "I hope you are well. Also, I wanted to provide an update regarding the launch. We can commence testing prior to Friday. Please reach out if you have any questions.",
+  "email|natural|light|uk": "I hope you are well. Also, I wanted to provide an update regarding the launch. We can commence testing prior to Friday. Please reach out if you have any questions.",
+  "email|natural|balanced|us": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|natural|balanced|uk": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|natural|strong|us": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|natural|strong|uk": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|professional|light|us": "I hope you are well. Also, I wanted to provide an update regarding the launch. We can commence testing prior to Friday. Please reach out if you have any questions.",
+  "email|professional|light|uk": "I hope you are well. Also, I wanted to provide an update regarding the launch. We can commence testing prior to Friday. Please reach out if you have any questions.",
+  "email|professional|balanced|us": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|professional|balanced|uk": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|professional|strong|us": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|professional|strong|uk": "I hope you are well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|formal|light|us": "I hope this email finds you well. Also, I wanted to provide an update regarding the launch. We can commence testing prior to Friday. Please reach out if you have any questions.",
+  "email|formal|light|uk": "I hope this email finds you well. Also, I wanted to provide an update regarding the launch. We can commence testing prior to Friday. Please reach out if you have any questions.",
+  "email|formal|balanced|us": "I hope this email finds you well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|formal|balanced|uk": "I hope this email finds you well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|formal|strong|us": "I hope this email finds you well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "email|formal|strong|uk": "I hope this email finds you well. Also, I wanted to provide an update about the launch. We can start testing before Friday. Please reach out if you have any questions.",
+  "entities|natural|light|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month utilize the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|natural|light|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month utilise the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|natural|balanced|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|natural|balanced|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|natural|strong|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|natural|strong|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|professional|light|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month utilize the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|professional|light|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month utilise the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|professional|balanced|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|professional|balanced|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|professional|strong|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|professional|strong|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|formal|light|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month utilize the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|formal|light|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month utilise the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|formal|balanced|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|formal|balanced|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|formal|strong|us": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "entities|formal|strong|uk": "Also, Priya Nair of Acme Corp said 42% of users to save $1,200 per month use the tool, as \"in order to utilize\" shows (Smith, 2020). In 2023, the team published the data at https://example.com/a-wide-range-of on March 5, 2024. Many readers contacted info@example.com about the 3.5 million downloads [12].",
+  "layout|natural|light|us": "# Moreover, a heading in order to stay\n\nThis paragraph is able to utilize a wide range of tools to work well.\n\n1. Also, the first item can utilize many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can leverage the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|natural|light|uk": "# Moreover, a heading in order to stay\n\nThis paragraph is able to utilise a wide range of tools to work well.\n\n1. Also, the first item can utilise many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can leverage the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|natural|balanced|us": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|natural|balanced|uk": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|natural|strong|us": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|natural|strong|uk": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|professional|light|us": "# Moreover, a heading in order to stay\n\nThis paragraph is able to utilize a wide range of tools to work well.\n\n1. Also, the first item can utilize many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can leverage the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|professional|light|uk": "# Moreover, a heading in order to stay\n\nThis paragraph is able to utilise a wide range of tools to work well.\n\n1. Also, the first item can utilise many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can leverage the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|professional|balanced|us": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|professional|balanced|uk": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|professional|strong|us": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|professional|strong|uk": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|formal|light|us": "# Moreover, a heading in order to stay\n\nThis paragraph is able to utilize a wide range of tools to work well.\n\n1. Also, the first item can utilize many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can leverage the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|formal|light|uk": "# Moreover, a heading in order to stay\n\nThis paragraph is able to utilise a wide range of tools to work well.\n\n1. Also, the first item can utilise many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can leverage the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|formal|balanced|us": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|formal|balanced|uk": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|formal|strong|us": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```",
+  "layout|formal|strong|uk": "# Moreover, a heading in order to stay\n\nThis paragraph can use a wide range of tools to work well.\n\n1. Also, the first item can use many tools every single day.\n2. The second item is important to finish the whole list.\n\n- A bullet that can draw on the plan to finish.\n\n| in order to | utilize |\n| --- | --- |\n\n```\nin order to utilize\n```"
+ },
+ "rules": {
+  "op-moreover": {
+   "seed": 1,
+   "output": "Also, the plan works well for the team."
+  },
+  "op-furthermore": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "op-additionally": {
+   "seed": 1,
+   "output": "Also, the plan works well for the team."
+  },
+  "op-in-addition": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "op-consequently": {
+   "seed": 1,
+   "output": "So the plan works well for the team."
+  },
+  "op-therefore": {
+   "seed": 1,
+   "output": "So the plan works well for the team."
+  },
+  "op-thus": {
+   "seed": 1,
+   "output": "So the plan works well for the team."
+  },
+  "op-hence": {
+   "seed": 1,
+   "output": "So the plan works well for the team."
+  },
+  "op-nevertheless": {
+   "seed": 1,
+   "output": "Even so, the plan works well for the team."
+  },
+  "op-nonetheless": {
+   "seed": 1,
+   "output": "Still, the plan works well for the team."
+  },
+  "op-however": {
+   "seed": 1,
+   "output": "Still, the plan works well for the team."
+  },
+  "op-subsequently": {
+   "seed": 1,
+   "output": "Then, the plan works well for the team."
+  },
+  "op-accordingly": {
+   "seed": 1,
+   "output": "So the plan works well for the team."
+  },
+  "op-indeed": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "op-notably": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "op-importantly": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "op-in-conclusion": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "op-in-summary": {
+   "seed": 1,
+   "output": "The plan works well for the team."
+  },
+  "st-important-note": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-worth-noting": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-should-noted": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-goes-without": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-needless": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-can-be-seen": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-no-doubt": {
+   "seed": 1,
+   "output": "The team said that the plan works well for everyone."
+  },
+  "st-remember": {
+   "seed": 1,
+   "output": "The team said that keep in mind that the plan works well for everyone."
+  },
+  "st-understand": {
+   "seed": 1,
+   "output": "The team said that keep in mind that the plan works well for everyone."
+  },
+  "st-today-fast": {
+   "seed": 1,
+   "output": "The team said that today the plan works well for everyone."
+  },
+  "st-today-digital": {
+   "seed": 1,
+   "output": "The team said that today the plan works well for everyone."
+  },
+  "st-today-world": {
+   "seed": 1,
+   "output": "The team said that these days the plan works well for everyone."
+  },
+  "st-ever-evolving-landscape": {
+   "seed": 1,
+   "output": "The team said that in the plan works well for everyone."
+  },
+  "st-landscape": {
+   "seed": 1,
+   "output": "The team said that in the plan works well for everyone."
+  },
+  "st-realm": {
+   "seed": 1,
+   "output": "The team said that in the plan works well for everyone."
+  },
+  "st-context-of": {
+   "seed": 1,
+   "output": "The team said that in the plan works well for everyone."
+  },
+  "st-crucial-role": {
+   "seed": 1,
+   "output": "The team said that matters for the plan works well for everyone."
+  },
+  "st-crucial-role-pl": {
+   "seed": 1,
+   "output": "The team said that matter for the plan works well for everyone."
+  },
+  "st-vital-role": {
+   "seed": 1,
+   "output": "The team said that matters for the plan works well for everyone."
+  },
+  "st-vital-role-pl": {
+   "seed": 1,
+   "output": "The team said that matter for the plan works well for everyone."
+  },
+  "st-pivotal-role": {
+   "seed": 1,
+   "output": "The team said that is key to the plan works well for everyone."
+  },
+  "st-pivotal-role-pl": {
+   "seed": 1,
+   "output": "The team said that are key to the plan works well for everyone."
+  },
+  "st-testament": {
+   "seed": 1,
+   "output": "The team said that proof of the plan works well for everyone."
+  },
+  "st-delve-into": {
+   "seed": 1,
+   "output": "The team said that look at the plan works well for everyone."
+  },
+  "st-delves-into": {
+   "seed": 1,
+   "output": "The team said that looks at the plan works well for everyone."
+  },
+  "st-delving-into": {
+   "seed": 1,
+   "output": "The team said that looking at the plan works well for everyone."
+  },
+  "st-dive-into": {
+   "seed": 1,
+   "output": "The team said that look at the plan works well for everyone."
+  },
+  "st-dive-deep": {
+   "seed": 1,
+   "output": "The team said that look closely at the plan works well for everyone."
+  },
+  "st-navigate-complexities": {
+   "seed": 1,
+   "output": "The team said that work through the plan works well for everyone."
+  },
+  "st-end-of-day": {
+   "seed": 1,
+   "output": "The team said that ultimately the plan works well for everyone."
+  },
+  "st-when-comes": {
+   "seed": 1,
+   "output": "The team said that with the plan works well for everyone."
+  },
+  "st-wide-range": {
+   "seed": 1,
+   "output": "The team said that many the plan works well for everyone."
+  },
+  "st-wide-array": {
+   "seed": 1,
+   "output": "The team said that all kinds of the plan works well for everyone."
+  },
+  "st-broad-range": {
+   "seed": 1,
+   "output": "The team said that many the plan works well for everyone."
+  },
+  "st-diverse-range": {
+   "seed": 1,
+   "output": "The team said that many the plan works well for everyone."
+  },
+  "st-variety": {
+   "seed": 1,
+   "output": "The team said that several the plan works well for everyone."
+  },
+  "st-plethora": {
+   "seed": 1,
+   "output": "The team said that plenty of the plan works well for everyone."
+  },
+  "st-myriad": {
+   "seed": 1,
+   "output": "The team said that countless the plan works well for everyone."
+  },
+  "st-due-fact": {
+   "seed": 1,
+   "output": "The team said that because the plan works well for everyone."
+  },
+  "st-in-order": {
+   "seed": 1,
+   "output": "The team said that to the plan works well for everyone."
+  },
+  "st-purpose-of": {
+   "seed": 1,
+   "output": "The team said that for the plan works well for everyone."
+  },
+  "st-regard": {
+   "seed": 1,
+   "output": "The team said that about the plan works well for everyone."
+  },
+  "st-respect": {
+   "seed": 1,
+   "output": "The team said that about the plan works well for everyone."
+  },
+  "st-event-that": {
+   "seed": 1,
+   "output": "The team said that if the plan works well for everyone."
+  },
+  "st-light-of": {
+   "seed": 1,
+   "output": "The team said that given the plan works well for everyone."
+  },
+  "st-first-foremost": {
+   "seed": 1,
+   "output": "The team said that first the plan works well for everyone."
+  },
+  "st-last-least": {
+   "seed": 1,
+   "output": "The team said that lastly the plan works well for everyone."
+  },
+  "st-each-every": {
+   "seed": 1,
+   "output": "The team said that every the plan works well for everyone."
+  },
+  "st-ability-has": {
+   "seed": 1,
+   "output": "The team said that can the plan works well for everyone."
+  },
+  "st-ability-have": {
+   "seed": 1,
+   "output": "The team said that can the plan works well for everyone."
+  },
+  "st-is-able": {
+   "seed": 1,
+   "output": "The team said that can the plan works well for everyone."
+  },
+  "st-are-able": {
+   "seed": 1,
+   "output": "The team said that can the plan works well for everyone."
+  },
+  "st-point-in-time": {
+   "seed": 1,
+   "output": "The team said that now the plan works well for everyone."
+  },
+  "st-near-future": {
+   "seed": 1,
+   "output": "The team said that soon the plan works well for everyone."
+  },
+  "st-large-number": {
+   "seed": 1,
+   "output": "The team said that many the plan works well for everyone."
+  },
+  "st-significant-number": {
+   "seed": 1,
+   "output": "The team said that many the plan works well for everyone."
+  },
+  "st-vast-majority": {
+   "seed": 1,
+   "output": "The team said that most the plan works well for everyone."
+  },
+  "st-despite-fact": {
+   "seed": 1,
+   "output": "The team said that although the plan works well for everyone."
+  },
+  "st-spite-fact": {
+   "seed": 1,
+   "output": "The team said that even though the plan works well for everyone."
+  },
+  "st-daily-basis": {
+   "seed": 1,
+   "output": "The team said that every day the plan works well for everyone."
+  },
+  "st-regular-basis": {
+   "seed": 1,
+   "output": "The team said that regularly the plan works well for everyone."
+  },
+  "st-timely": {
+   "seed": 1,
+   "output": "The team said that promptly the plan works well for everyone."
+  },
+  "st-serves-as-a": {
+   "seed": 1,
+   "output": "The team said that is a the plan works well for everyone."
+  },
+  "st-serves-as-an": {
+   "seed": 1,
+   "output": "The team said that is an the plan works well for everyone."
+  },
+  "st-sense-of": {
+   "seed": 1,
+   "output": "The team said that build the plan works well for everyone."
+  },
+  "st-full-potential": {
+   "seed": 1,
+   "output": "The team said that get the most from the plan works well for everyone."
+  },
+  "st-unlock-potential": {
+   "seed": 1,
+   "output": "The team said that make more of the plan works well for everyone."
+  },
+  "st-next-level": {
+   "seed": 1,
+   "output": "The team said that make it better the plan works well for everyone."
+  },
+  "st-harness-power": {
+   "seed": 1,
+   "output": "The team said that use the plan works well for everyone."
+  },
+  "st-leverage-power": {
+   "seed": 1,
+   "output": "The team said that use the plan works well for everyone."
+  },
+  "st-game-changer": {
+   "seed": 1,
+   "output": "The team said that a major shift the plan works well for everyone."
+  },
+  "st-pave-way": {
+   "seed": 1,
+   "output": "The team said that lead to the plan works well for everyone."
+  },
+  "st-paves-way": {
+   "seed": 1,
+   "output": "The team said that leads to the plan works well for everyone."
+  },
+  "st-shed-light": {
+   "seed": 1,
+   "output": "The team said that explain the plan works well for everyone."
+  },
+  "st-sheds-light": {
+   "seed": 1,
+   "output": "The team said that helps explain the plan works well for everyone."
+  },
+  "st-tapestry": {
+   "seed": 1,
+   "output": "The team said that mix of the plan works well for everyone."
+  },
+  "st-as-previously": {
+   "seed": 1,
+   "output": "The team said that as noted the plan works well for everyone."
+  },
+  "st-as-earlier": {
+   "seed": 1,
+   "output": "The team said that as noted earlier the plan works well for everyone."
+  },
+  "st-simply": {
+   "seed": 1,
+   "output": "The team said that simply put the plan works well for everyone."
+  },
+  "st-integral": {
+   "seed": 1,
+   "output": "The team said that a key part of the plan works well for everyone."
+  },
+  "st-key-aspect": {
+   "seed": 1,
+   "output": "The team said that a main part of the plan works well for everyone."
+  },
+  "st-crucial-aspect": {
+   "seed": 1,
+   "output": "The team said that an important part of the plan works well for everyone."
+  },
+  "st-deeper": {
+   "seed": 1,
+   "output": "The team said that a clearer view of the plan works well for everyone."
+  },
+  "st-informed": {
+   "seed": 1,
+   "output": "The team said that make better decisions the plan works well for everyone."
+  },
+  "st-curve": {
+   "seed": 1,
+   "output": "The team said that keep ahead the plan works well for everyone."
+  },
+  "st-hesitate": {
+   "seed": 1,
+   "output": "The team said that please the plan works well for everyone."
+  },
+  "st-hesitate-c": {
+   "seed": 1,
+   "output": "The team said that please the plan works well for everyone."
+  },
+  "st-reach-out": {
+   "seed": 1,
+   "output": "The team said that contact the plan works well for everyone."
+  },
+  "st-email-well": {
+   "seed": 1,
+   "output": "The team said that i hope you are well the plan works well for everyone."
+  },
+  "pl-utilize": {
+   "seed": 1,
+   "output": "The team will use the plan every day this year."
+  },
+  "pl-utilize-s": {
+   "seed": 1,
+   "output": "The team will uses the plan every day this year."
+  },
+  "pl-utilize-ed": {
+   "seed": 1,
+   "output": "The team will used the plan every day this year."
+  },
+  "pl-utilize-ing": {
+   "seed": 1,
+   "output": "The team will using the plan every day this year."
+  },
+  "pl-utilise": {
+   "seed": 1,
+   "output": "The team will use the plan every day this year."
+  },
+  "pl-utilise-s": {
+   "seed": 1,
+   "output": "The team will uses the plan every day this year."
+  },
+  "pl-utilise-ed": {
+   "seed": 1,
+   "output": "The team will used the plan every day this year."
+  },
+  "pl-utilise-ing": {
+   "seed": 1,
+   "output": "The team will using the plan every day this year."
+  },
+  "pl-leverage": {
+   "seed": 1,
+   "output": "The team will use the plan every day this year."
+  },
+  "pl-leverage-s": {
+   "seed": 1,
+   "output": "The team will draws on the plan every day this year."
+  },
+  "pl-leverage-ed": {
+   "seed": 1,
+   "output": "The team will used the plan every day this year."
+  },
+  "pl-leverage-ing": {
+   "seed": 1,
+   "output": "The team will using the plan every day this year."
+  },
+  "pl-facilitate": {
+   "seed": 1,
+   "output": "The team will help the plan every day this year."
+  },
+  "pl-facilitate-s": {
+   "seed": 1,
+   "output": "The team will helps the plan every day this year."
+  },
+  "pl-facilitate-ed": {
+   "seed": 1,
+   "output": "The team will helped the plan every day this year."
+  },
+  "pl-facilitate-ing": {
+   "seed": 1,
+   "output": "The team will helping the plan every day this year."
+  },
+  "pl-commence": {
+   "seed": 1,
+   "output": "The team will start the plan every day this year."
+  },
+  "pl-commence-s": {
+   "seed": 1,
+   "output": "The team will starts the plan every day this year."
+  },
+  "pl-commence-ed": {
+   "seed": 1,
+   "output": "The team will started the plan every day this year."
+  },
+  "pl-commence-ing": {
+   "seed": 1,
+   "output": "The team will starting the plan every day this year."
+  },
+  "pl-terminate": {
+   "seed": 1,
+   "output": "The team will end the plan every day this year."
+  },
+  "pl-terminate-s": {
+   "seed": 1,
+   "output": "The team will ends the plan every day this year."
+  },
+  "pl-terminate-ed": {
+   "seed": 1,
+   "output": "The team will ended the plan every day this year."
+  },
+  "pl-terminate-ing": {
+   "seed": 1,
+   "output": "The team will ending the plan every day this year."
+  },
+  "pl-endeavor": {
+   "seed": 2,
+   "output": "The team will try the plan every day this year."
+  },
+  "pl-endeavor-s": {
+   "seed": 1,
+   "output": "The team will tries the plan every day this year."
+  },
+  "pl-endeavor-ed": {
+   "seed": 1,
+   "output": "The team will tried the plan every day this year."
+  },
+  "pl-endeavor-ing": {
+   "seed": 1,
+   "output": "The team will trying the plan every day this year."
+  },
+  "pl-ascertain": {
+   "seed": 1,
+   "output": "The team will find out the plan every day this year."
+  },
+  "pl-ascertain-s": {
+   "seed": 1,
+   "output": "The team will finds out the plan every day this year."
+  },
+  "pl-ascertain-ed": {
+   "seed": 1,
+   "output": "The team will found out the plan every day this year."
+  },
+  "pl-ascertain-ing": {
+   "seed": 1,
+   "output": "The team will finding out the plan every day this year."
+  },
+  "pl-demonstrate": {
+   "seed": 1,
+   "output": "The team will show the plan every day this year."
+  },
+  "pl-demonstrate-s": {
+   "seed": 1,
+   "output": "The team will shows the plan every day this year."
+  },
+  "pl-demonstrate-ed": {
+   "seed": 1,
+   "output": "The team will showed the plan every day this year."
+  },
+  "pl-demonstrate-ing": {
+   "seed": 1,
+   "output": "The team will showing the plan every day this year."
+  },
+  "pl-possess": {
+   "seed": 1,
+   "output": "The team will have the plan every day this year."
+  },
+  "pl-possess-s": {
+   "seed": 1,
+   "output": "The team will has the plan every day this year."
+  },
+  "pl-possess-ed": {
+   "seed": 1,
+   "output": "The team will had the plan every day this year."
+  },
+  "pl-possess-ing": {
+   "seed": 1,
+   "output": "The team will having the plan every day this year."
+  },
+  "pl-obtain": {
+   "seed": 1,
+   "output": "The team will get the plan every day this year."
+  },
+  "pl-obtain-s": {
+   "seed": 1,
+   "output": "The team will gets the plan every day this year."
+  },
+  "pl-obtain-ed": {
+   "seed": 1,
+   "output": "The team will got the plan every day this year."
+  },
+  "pl-obtain-ing": {
+   "seed": 1,
+   "output": "The team will getting the plan every day this year."
+  },
+  "pl-acquire": {
+   "seed": 1,
+   "output": "The team will get the plan every day this year."
+  },
+  "pl-acquire-s": {
+   "seed": 1,
+   "output": "The team will gets the plan every day this year."
+  },
+  "pl-acquire-ed": {
+   "seed": 1,
+   "output": "The team will got the plan every day this year."
+  },
+  "pl-acquire-ing": {
+   "seed": 1,
+   "output": "The team will getting the plan every day this year."
+  },
+  "pl-purchase": {
+   "seed": 1,
+   "output": "The team will buy the plan every day this year."
+  },
+  "pl-purchase-s": {
+   "seed": 1,
+   "output": "The team will buys the plan every day this year."
+  },
+  "pl-purchase-ed": {
+   "seed": 1,
+   "output": "The team will bought the plan every day this year."
+  },
+  "pl-purchase-ing": {
+   "seed": 1,
+   "output": "The team will buying the plan every day this year."
+  },
+  "pl-assist": {
+   "seed": 1,
+   "output": "The team will help the plan every day this year."
+  },
+  "pl-assist-s": {
+   "seed": 1,
+   "output": "The team will helps the plan every day this year."
+  },
+  "pl-assist-ed": {
+   "seed": 1,
+   "output": "The team will helped the plan every day this year."
+  },
+  "pl-assist-ing": {
+   "seed": 1,
+   "output": "The team will helping the plan every day this year."
+  },
+  "pl-enhance": {
+   "seed": 1,
+   "output": "The team will improve the plan every day this year."
+  },
+  "pl-enhance-s": {
+   "seed": 1,
+   "output": "The team will improves the plan every day this year."
+  },
+  "pl-enhance-ed": {
+   "seed": 1,
+   "output": "The team will improved the plan every day this year."
+  },
+  "pl-enhance-ing": {
+   "seed": 1,
+   "output": "The team will improving the plan every day this year."
+  },
+  "pl-bolster": {
+   "seed": 1,
+   "output": "The team will support the plan every day this year."
+  },
+  "pl-bolster-s": {
+   "seed": 1,
+   "output": "The team will supports the plan every day this year."
+  },
+  "pl-bolster-ed": {
+   "seed": 1,
+   "output": "The team will supported the plan every day this year."
+  },
+  "pl-bolster-ing": {
+   "seed": 1,
+   "output": "The team will strengthening the plan every day this year."
+  },
+  "pl-underscore": {
+   "seed": 1,
+   "output": "The team will highlight the plan every day this year."
+  },
+  "pl-underscore-s": {
+   "seed": 1,
+   "output": "The team will stresses the plan every day this year."
+  },
+  "pl-underscore-ed": {
+   "seed": 1,
+   "output": "The team will stressed the plan every day this year."
+  },
+  "pl-underscore-ing": {
+   "seed": 1,
+   "output": "The team will highlighting the plan every day this year."
+  },
+  "pl-showcase": {
+   "seed": 1,
+   "output": "The team will show the plan every day this year."
+  },
+  "pl-showcase-s": {
+   "seed": 1,
+   "output": "The team will highlights the plan every day this year."
+  },
+  "pl-showcase-ed": {
+   "seed": 1,
+   "output": "The team will highlighted the plan every day this year."
+  },
+  "pl-showcase-ing": {
+   "seed": 1,
+   "output": "The team will highlighting the plan every day this year."
+  },
+  "pl-elucidate": {
+   "seed": 1,
+   "output": "The team will explain the plan every day this year."
+  },
+  "pl-elucidate-s": {
+   "seed": 1,
+   "output": "The team will explains the plan every day this year."
+  },
+  "pl-elucidate-ed": {
+   "seed": 1,
+   "output": "The team will explained the plan every day this year."
+  },
+  "pl-elucidate-ing": {
+   "seed": 1,
+   "output": "The team will explaining the plan every day this year."
+  },
+  "pl-ameliorate": {
+   "seed": 1,
+   "output": "The team will improve the plan every day this year."
+  },
+  "pl-ameliorate-s": {
+   "seed": 1,
+   "output": "The team will improves the plan every day this year."
+  },
+  "pl-ameliorate-ed": {
+   "seed": 1,
+   "output": "The team will improved the plan every day this year."
+  },
+  "pl-ameliorate-ing": {
+   "seed": 1,
+   "output": "The team will improving the plan every day this year."
+  },
+  "pl-mitigate": {
+   "seed": 1,
+   "output": "The team will limit the plan every day this year."
+  },
+  "pl-mitigate-s": {
+   "seed": 1,
+   "output": "The team will reduces the plan every day this year."
+  },
+  "pl-mitigate-ed": {
+   "seed": 1,
+   "output": "The team will limited the plan every day this year."
+  },
+  "pl-mitigate-ing": {
+   "seed": 1,
+   "output": "The team will reducing the plan every day this year."
+  },
+  "pl-encompass": {
+   "seed": 1,
+   "output": "The team will include the plan every day this year."
+  },
+  "pl-encompass-s": {
+   "seed": 1,
+   "output": "The team will covers the plan every day this year."
+  },
+  "pl-encompass-ed": {
+   "seed": 1,
+   "output": "The team will covered the plan every day this year."
+  },
+  "pl-encompass-ing": {
+   "seed": 1,
+   "output": "The team will covering the plan every day this year."
+  },
+  "pl-exemplify": {
+   "seed": 1,
+   "output": "The team will show the plan every day this year."
+  },
+  "pl-exemplify-s": {
+   "seed": 1,
+   "output": "The team will shows the plan every day this year."
+  },
+  "pl-exemplify-ed": {
+   "seed": 1,
+   "output": "The team will showed the plan every day this year."
+  },
+  "pl-exemplify-ing": {
+   "seed": 1,
+   "output": "The team will showing the plan every day this year."
+  },
+  "pl-garner": {
+   "seed": 1,
+   "output": "The team will earn the plan every day this year."
+  },
+  "pl-garner-s": {
+   "seed": 1,
+   "output": "The team will attracts the plan every day this year."
+  },
+  "pl-garner-ed": {
+   "seed": 1,
+   "output": "The team will attracted the plan every day this year."
+  },
+  "pl-garner-ing": {
+   "seed": 2,
+   "output": "The team will attracting the plan every day this year."
+  },
+  "pl-necessitate": {
+   "seed": 1,
+   "output": "The team will require the plan every day this year."
+  },
+  "pl-necessitate-s": {
+   "seed": 1,
+   "output": "The team will requires the plan every day this year."
+  },
+  "pl-necessitate-ed": {
+   "seed": 1,
+   "output": "The team will required the plan every day this year."
+  },
+  "pl-necessitate-ing": {
+   "seed": 1,
+   "output": "The team will requiring the plan every day this year."
+  },
+  "pl-expedite": {
+   "seed": 1,
+   "output": "The team will speed up the plan every day this year."
+  },
+  "pl-expedite-s": {
+   "seed": 1,
+   "output": "The team will speeds up the plan every day this year."
+  },
+  "pl-expedite-ed": {
+   "seed": 1,
+   "output": "The team will sped up the plan every day this year."
+  },
+  "pl-expedite-ing": {
+   "seed": 1,
+   "output": "The team will speeding up the plan every day this year."
+  },
+  "pl-initiate": {
+   "seed": 1,
+   "output": "The team will start the plan every day this year."
+  },
+  "pl-initiate-s": {
+   "seed": 1,
+   "output": "The team will starts the plan every day this year."
+  },
+  "pl-initiate-ed": {
+   "seed": 1,
+   "output": "The team will started the plan every day this year."
+  },
+  "pl-initiate-ing": {
+   "seed": 1,
+   "output": "The team will starting the plan every day this year."
+  },
+  "pl-modify": {
+   "seed": 1,
+   "output": "The team will change the plan every day this year."
+  },
+  "pl-modify-s": {
+   "seed": 1,
+   "output": "The team will changes the plan every day this year."
+  },
+  "pl-modify-ed": {
+   "seed": 1,
+   "output": "The team will changed the plan every day this year."
+  },
+  "pl-modify-ing": {
+   "seed": 1,
+   "output": "The team will changing the plan every day this year."
+  },
+  "pl-foster": {
+   "seed": 1,
+   "output": "The team will encourage the plan every day this year."
+  },
+  "pl-foster-s": {
+   "seed": 1,
+   "output": "The team will encourages the plan every day this year."
+  },
+  "pl-foster-ed": {
+   "seed": 1,
+   "output": "The team will built the plan every day this year."
+  },
+  "pl-foster-ing": {
+   "seed": 1,
+   "output": "The team will encouraging the plan every day this year."
+  },
+  "pl-streamline": {
+   "seed": 1,
+   "output": "The team will simplify the plan every day this year."
+  },
+  "pl-streamline-s": {
+   "seed": 1,
+   "output": "The team will simplifies the plan every day this year."
+  },
+  "pl-streamline-ed": {
+   "seed": 1,
+   "output": "The team will simplified the plan every day this year."
+  },
+  "pl-streamline-ing": {
+   "seed": 1,
+   "output": "The team will simplifying the plan every day this year."
+  },
+  "pl-elevate": {
+   "seed": 1,
+   "output": "The team will raise the plan every day this year."
+  },
+  "pl-elevate-s": {
+   "seed": 1,
+   "output": "The team will raises the plan every day this year."
+  },
+  "pl-elevate-ed": {
+   "seed": 1,
+   "output": "The team will lifted the plan every day this year."
+  },
+  "pl-elevate-ing": {
+   "seed": 1,
+   "output": "The team will raising the plan every day this year."
+  },
+  "pl-spearhead": {
+   "seed": 1,
+   "output": "The team will lead the plan every day this year."
+  },
+  "pl-spearhead-s": {
+   "seed": 1,
+   "output": "The team will leads the plan every day this year."
+  },
+  "pl-spearhead-ed": {
+   "seed": 1,
+   "output": "The team will led the plan every day this year."
+  },
+  "pl-spearhead-ing": {
+   "seed": 1,
+   "output": "The team will leading the plan every day this year."
+  },
+  "pl-revolutionize": {
+   "seed": 1,
+   "output": "The team will change the plan every day this year."
+  },
+  "pl-revolutionize-s": {
+   "seed": 1,
+   "output": "The team will transforms the plan every day this year."
+  },
+  "pl-revolutionize-ed": {
+   "seed": 1,
+   "output": "The team will transformed the plan every day this year."
+  },
+  "pl-revolutionize-ing": {
+   "seed": 1,
+   "output": "The team will changing the plan every day this year."
+  },
+  "pl-illustrate": {
+   "seed": 1,
+   "output": "The team will show the plan every day this year."
+  },
+  "pl-illustrate-s": {
+   "seed": 1,
+   "output": "The team will shows the plan every day this year."
+  },
+  "pl-illustrate-ed": {
+   "seed": 1,
+   "output": "The team will showed the plan every day this year."
+  },
+  "pl-illustrate-ing": {
+   "seed": 1,
+   "output": "The team will showing the plan every day this year."
+  },
+  "pl-adhere": {
+   "seed": 1,
+   "output": "The team will stick to the plan every day."
+  },
+  "pl-adhere-s": {
+   "seed": 1,
+   "output": "The team will sticks to the plan every day."
+  },
+  "pl-adhere-ed": {
+   "seed": 1,
+   "output": "The team will stuck to the plan every day."
+  },
+  "pl-adhere-ing": {
+   "seed": 1,
+   "output": "The team will sticking to the plan every day."
+  },
+  "pl-attain": {
+   "seed": 1,
+   "output": "The team will reach the plan every day this year."
+  },
+  "pl-attain-s": {
+   "seed": 1,
+   "output": "The team will reaches the plan every day this year."
+  },
+  "pl-attain-ed": {
+   "seed": 1,
+   "output": "The team will reached the plan every day this year."
+  },
+  "pl-attain-ing": {
+   "seed": 1,
+   "output": "The team will reaching the plan every day this year."
+  },
+  "pl-transmit": {
+   "seed": 1,
+   "output": "The team will send the plan every day this year."
+  },
+  "pl-transmit-s": {
+   "seed": 1,
+   "output": "The team will sends the plan every day this year."
+  },
+  "pl-transmit-ed": {
+   "seed": 1,
+   "output": "The team will sent the plan every day this year."
+  },
+  "pl-transmit-ing": {
+   "seed": 1,
+   "output": "The team will sending the plan every day this year."
+  },
+  "pl-reside": {
+   "seed": 1,
+   "output": "The team will live the plan every day this year."
+  },
+  "pl-reside-s": {
+   "seed": 1,
+   "output": "The team will lives the plan every day this year."
+  },
+  "pl-reside-ed": {
+   "seed": 1,
+   "output": "The team will lived the plan every day this year."
+  },
+  "pl-reside-ing": {
+   "seed": 1,
+   "output": "The team will living the plan every day this year."
+  },
+  "pl-inquire": {
+   "seed": 1,
+   "output": "The team will ask the plan every day this year."
+  },
+  "pl-inquire-s": {
+   "seed": 1,
+   "output": "The team will asks the plan every day this year."
+  },
+  "pl-inquire-ed": {
+   "seed": 1,
+   "output": "The team will asked the plan every day this year."
+  },
+  "pl-inquire-ing": {
+   "seed": 1,
+   "output": "The team will asking the plan every day this year."
+  },
+  "pl-concur": {
+   "seed": 1,
+   "output": "The team will agree the plan every day this year."
+  },
+  "pl-concur-s": {
+   "seed": 1,
+   "output": "The team will agrees the plan every day this year."
+  },
+  "pl-concur-ed": {
+   "seed": 1,
+   "output": "The team will agreed the plan every day this year."
+  },
+  "pl-concur-ing": {
+   "seed": 1,
+   "output": "The team will agreeing the plan every day this year."
+  },
+  "pl-alleviate": {
+   "seed": 1,
+   "output": "The team will ease the plan every day this year."
+  },
+  "pl-alleviate-s": {
+   "seed": 1,
+   "output": "The team will eases the plan every day this year."
+  },
+  "pl-alleviate-ed": {
+   "seed": 1,
+   "output": "The team will relieved the plan every day this year."
+  },
+  "pl-alleviate-ing": {
+   "seed": 1,
+   "output": "The team will easing the plan every day this year."
+  },
+  "pl-enable": {
+   "seed": 1,
+   "output": "The tool will help users to work faster every day."
+  },
+  "pl-enable-s": {
+   "seed": 1,
+   "output": "The tool will helps users to work faster every day."
+  },
+  "pl-enable-ed": {
+   "seed": 1,
+   "output": "The tool will helped users to work faster every day."
+  },
+  "pl-enable-ing": {
+   "seed": 1,
+   "output": "The tool will helping users to work faster every day."
+  },
+  "pl-ensure": {
+   "seed": 1,
+   "output": "The team will make sure that the plan works well."
+  },
+  "pl-ensure-s": {
+   "seed": 1,
+   "output": "The team will makes sure that the plan works well."
+  },
+  "pl-ensure-ed": {
+   "seed": 1,
+   "output": "The team will made sure that the plan works well."
+  },
+  "pl-ensure-ing": {
+   "seed": 1,
+   "output": "The team will making sure that the plan works well."
+  },
+  "pl-prior-to": {
+   "seed": 1,
+   "output": "The team will before the plan every day this year."
+  },
+  "pl-subsequent-to": {
+   "seed": 1,
+   "output": "The team will after the plan every day this year."
+  },
+  "pl-pertaining": {
+   "seed": 1,
+   "output": "The team will about the plan every day this year."
+  },
+  "pl-accordance": {
+   "seed": 1,
+   "output": "The team will following the plan every day this year."
+  },
+  "pl-exception": {
+   "seed": 1,
+   "output": "The team will except for the plan every day this year."
+  },
+  "pl-majority": {
+   "seed": 1,
+   "output": "The team will most the plan every day this year."
+  },
+  "pl-at-present": {
+   "seed": 1,
+   "output": "The team will now the plan every day this year."
+  },
+  "pl-sufficient": {
+   "seed": 2,
+   "output": "The team will enough the plan every day this year."
+  },
+  "pl-numerous": {
+   "seed": 1,
+   "output": "The team will many the plan every day this year."
+  },
+  "pl-approximately": {
+   "seed": 1,
+   "output": "The team will roughly the plan every day this year."
+  },
+  "pl-regarding": {
+   "seed": 1,
+   "output": "The team will about the plan every day this year."
+  },
+  "pl-individuals": {
+   "seed": 1,
+   "output": "The team will people the plan every day this year."
+  },
+  "pl-utilization": {
+   "seed": 1,
+   "output": "The team will use the plan every day this year."
+  },
+  "pl-methodology": {
+   "seed": 1,
+   "output": "The team will approach the plan every day this year."
+  },
+  "pl-assistance": {
+   "seed": 2,
+   "output": "The team will help the plan every day this year."
+  },
+  "pl-remainder": {
+   "seed": 1,
+   "output": "The team will rest the plan every day this year."
+  },
+  "pl-ramifications": {
+   "seed": 1,
+   "output": "The team will consequences the plan every day this year."
+  },
+  "pl-subsequently": {
+   "seed": 1,
+   "output": "The team will then the plan every day this year."
+  },
+  "pl-primarily": {
+   "seed": 1,
+   "output": "The team will mainly the plan every day this year."
+  },
+  "pl-predominantly": {
+   "seed": 1,
+   "output": "The team will mainly the plan every day this year."
+  },
+  "pl-frequently": {
+   "seed": 1,
+   "output": "The team will often the plan every day this year."
+  },
+  "pl-whilst": {
+   "seed": 1,
+   "output": "The team will while the plan every day this year."
+  },
+  "pl-amongst": {
+   "seed": 1,
+   "output": "The team will among the plan every day this year."
+  },
+  "pl-aforementioned": {
+   "seed": 1,
+   "output": "The team will earlier the plan every day this year."
+  },
+  "pl-meticulously": {
+   "seed": 1,
+   "output": "The team will carefully the plan every day this year."
+  },
+  "pl-seamlessly": {
+   "seed": 1,
+   "output": "The team will smoothly the plan every day this year."
+  },
+  "pl-substantially": {
+   "seed": 2,
+   "output": "The team will greatly the plan every day this year."
+  },
+  "pl-inception": {
+   "seed": 1,
+   "output": "The team will start the plan every day this year."
+  },
+  "pl-cognizant": {
+   "seed": 1,
+   "output": "The team will aware of the plan every day this year."
+  },
+  "pl-advantageous": {
+   "seed": 1,
+   "output": "The team will useful the plan every day this year."
+  },
+  "pl-beneficial": {
+   "seed": 1,
+   "output": "The team will useful the plan every day this year."
+  },
+  "pl-erroneous": {
+   "seed": 1,
+   "output": "The team will incorrect the plan every day this year."
+  },
+  "pl-prevalent": {
+   "seed": 1,
+   "output": "The team will widespread the plan every day this year."
+  },
+  "pl-ubiquitous": {
+   "seed": 1,
+   "output": "The team will widespread the plan every day this year."
+  },
+  "pl-equitable": {
+   "seed": 1,
+   "output": "The team will fair the plan every day this year."
+  },
+  "pl-objective": {
+   "seed": 1,
+   "output": "We know the goal for the team this year."
+  },
+  "pl-objective-s": {
+   "seed": 1,
+   "output": "We know the goals for the team this year."
+  },
+  "ad-crucial": {
+   "seed": 1,
+   "output": "This is an important plan for the team."
+  },
+  "ad-pivotal": {
+   "seed": 1,
+   "output": "This is a key plan for the team."
+  },
+  "ad-vital": {
+   "seed": 1,
+   "output": "This is a key plan for the team."
+  },
+  "ad-robust": {
+   "seed": 3,
+   "output": "This is a solid plan for the team."
+  },
+  "ad-comprehensive": {
+   "seed": 1,
+   "output": "This is a full plan for the team."
+  },
+  "ad-innovative": {
+   "seed": 1,
+   "output": "This is a creative plan for the team."
+  },
+  "ad-cutting-edge": {
+   "seed": 1,
+   "output": "This is a modern plan for the team."
+  },
+  "ad-groundbreaking": {
+   "seed": 1,
+   "output": "This is a pioneering plan for the team."
+  },
+  "ad-transformative": {
+   "seed": 1,
+   "output": "This is a major plan for the team."
+  },
+  "ad-seamless": {
+   "seed": 2,
+   "output": "This is a smooth plan for the team."
+  },
+  "ad-meticulous": {
+   "seed": 2,
+   "output": "This is a thorough plan for the team."
+  },
+  "ad-multifaceted": {
+   "seed": 1,
+   "output": "This is a many-sided plan for the team."
+  },
+  "ad-intricate": {
+   "seed": 1,
+   "output": "This is a detailed plan for the team."
+  },
+  "ad-holistic": {
+   "seed": 1,
+   "output": "This is a whole-picture plan for the team."
+  },
+  "ad-nuanced": {
+   "seed": 1,
+   "output": "This is a careful plan for the team."
+  },
+  "ad-profound": {
+   "seed": 1,
+   "output": "This is a deep plan for the team."
+  },
+  "ad-unparalleled": {
+   "seed": 1,
+   "output": "This is an unmatched plan for the team."
+  },
+  "ad-compelling": {
+   "seed": 1,
+   "output": "This is a convincing plan for the team."
+  },
+  "ad-invaluable": {
+   "seed": 1,
+   "output": "This is a highly useful plan for the team."
+  },
+  "ad-vibrant": {
+   "seed": 1,
+   "output": "This is a lively plan for the team."
+  },
+  "ad-significant": {
+   "seed": 2,
+   "output": "This is a big plan for the team."
+  },
+  "ad-substantial": {
+   "seed": 2,
+   "output": "This is a sizable plan for the team."
+  },
+  "ad-optimal": {
+   "seed": 2,
+   "output": "This is a best plan for the team."
+  },
+  "ad-game-changing": {
+   "seed": 1,
+   "output": "This is a major plan for the team."
+  },
+  "ad-state-of-art": {
+   "seed": 2,
+   "output": "This is a latest plan for the team."
+  },
+  "ad-sophisticated": {
+   "seed": 1,
+   "output": "This is an advanced plan for the team."
+  }
+ }
+}

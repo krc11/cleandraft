@@ -1,0 +1,88 @@
+---
+import '../styles/global.css';
+import { SITE } from '../config.js';
+
+const { title, description, jsonLd = [], noindex = false } = Astro.props;
+const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '').replace(/\/index$/, '');
+const canonical = `${SITE.url}${path}`;
+const graphs = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    {graphs.map((g) => <script type="application/ld+json" set:html={JSON.stringify(g)} />)}
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="/">{SITE.name}</a>
+        <nav class="site-nav" aria-label="Main">
+          <a href="/tools" aria-current={path === '/tools' ? 'page' : undefined}>Tools</a>
+          <a href="/guides" aria-current={path.startsWith('/guides') ? 'page' : undefined}>Guides</a>
+          <a href="/about" aria-current={path === '/about' ? 'page' : undefined}>About</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <div>
+          <h2>Guides</h2>
+          <ul>
+            <li><a href="/guides/ai-phrases-to-avoid">AI phrases to avoid</a></li>
+            <li><a href="/guides/why-ai-writing-sounds-robotic">Why AI writing sounds robotic</a></li>
+            <li><a href="/guides/ai-draft-editing-checklist">Editing checklist</a></li>
+            <li><a href="/guides">All guides</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Tools</h2>
+          <ul>
+            <li><a href="/">Text humanizer</a></li>
+            <li><a href="/ai-email-editor">Email editor</a></li>
+            <li><a href="/ai-blog-post-editor">Blog post editor</a></li>
+            <li><a href="/linkedin-post-editor">LinkedIn post editor</a></li>
+            <li><a href="/tools">Text checker</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>About</h2>
+          <ul>
+            <li><a href="/how-it-works">How it works</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/editorial-policy">Editorial policy</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Legal</h2>
+          <ul>
+            <li><a href="/privacy">Privacy</a></li>
+            <li><a href="/terms">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">
+        Use AI in line with your school's or employer's rules. You are responsible for what you submit or publish. © 2026 {SITE.name}.
+      </p>
+    </footer>
+    {SITE.adsenseClient && <script src="/ads-loader.js" data-client={SITE.adsenseClient} defer></script>}
+  </body>
+</html>

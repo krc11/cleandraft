@@ -1,0 +1,79 @@
+---
+import { WORD_LIMIT } from '../engine/limits.js';
+const limit = WORD_LIMIT.toLocaleString('en-US');
+const { placeholder = 'Paste your AI draft here.' } = Astro.props;
+---
+
+<section class="tool-card" aria-label="Text editor" id="cd-tool">
+  <div class="tool-col">
+    <div class="pane-head">
+      <label for="cd-input">Your text</label>
+      <button type="button" id="cd-paste">Paste</button>
+    </div>
+    <textarea id="cd-input" placeholder={placeholder} spellcheck="true"></textarea>
+    <span class="count" id="cd-count">0 / {limit} words</span>
+    <div class="tool-settings">
+      <div class="controls">
+        <div>
+          <label for="cd-tone">Tone</label>
+          <select id="cd-tone">
+            <option value="natural">Natural</option>
+            <option value="professional">Professional</option>
+            <option value="formal">Formal</option>
+          </select>
+        </div>
+        <div>
+          <label for="cd-strength">Strength</label>
+          <select id="cd-strength">
+            <option value="light">Light</option>
+            <option value="balanced" selected>Balanced</option>
+            <option value="strong">Strong</option>
+          </select>
+        </div>
+        <div>
+          <label for="cd-variant">English</label>
+          <select id="cd-variant">
+            <option value="us">US</option>
+            <option value="uk">UK</option>
+            <option value="ca">Canadian</option>
+            <option value="au">Australian</option>
+          </select>
+        </div>
+      </div>
+      <div class="primary-row">
+        <button type="button" class="primary" id="cd-run">Humanize</button>
+        <button type="button" id="cd-cancel" hidden>Cancel</button>
+      </div>
+      <p class="hint">Removes stock AI phrasing and shows every edit. No account. Your text stays on this device.</p>
+      <p class="msg" id="cd-msg" role="status" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <div class="tool-col">
+    <div class="pane-head">
+      <label for="cd-output" id="cd-output-label">Edited text</label>
+      <button type="button" id="cd-toggle" aria-pressed="false" disabled>Show changes</button>
+    </div>
+    <textarea id="cd-output" placeholder="Your edited text appears here."></textarea>
+    <div class="diff" id="cd-diff" tabindex="0" aria-label="Changes against your original text" hidden></div>
+    <div class="actions">
+      <button type="button" class="primary" id="cd-copy" disabled>Copy</button>
+      <button type="button" id="cd-download" disabled>Download .txt</button>
+      <button type="button" id="cd-regen" disabled>Regenerate</button>
+      <button type="button" id="cd-undo" disabled>Undo</button>
+    </div>
+  </div>
+
+  <details class="edit-log" id="cd-log" hidden>
+    <summary id="cd-log-title">Edit log</summary>
+    <ol id="cd-log-list"></ol>
+  </details>
+</section>
+<p class="hint tool-note">
+  This is a rule-based editor: a light, visible edit rather than a full rewrite. Use AI in line with your school's or employer's rules. You are responsible for what you submit or publish.
+</p>
+<noscript><p class="msg error">The editor needs JavaScript. The guides on this site work without it.</p></noscript>
+
+<script>
+  import '../scripts/tool.js';
+</script>
