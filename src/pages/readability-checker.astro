@@ -1,0 +1,47 @@
+---
+import Base from '../layouts/Base.astro';
+import Checker from '../components/Checker.astro';
+import { SITE } from '../config.js';
+const ld = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Readability checker', url: `${SITE.url}/readability-checker`, applicationCategory: 'WritingApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } };
+---
+
+<Base title="Free Readability Checker: Flesch Reading Ease Score | CleanDraft" description="Check how easy your writing is to read. Get a Flesch reading ease score, average sentence length and your longest sentence. Free, with no signup." jsonLd={ld}>
+  <article class="page">
+    <h1>Free readability checker</h1>
+    <p class="lede">Paste at least 30 words to get a Flesch reading ease score, your average sentence length and your longest sentence.</p>
+    <Checker />
+
+    <h2>How to read the score</h2>
+    <p>The Flesch reading ease score runs from 0 to 100. Higher means easier. It uses two things only: how long your sentences are and how many syllables your words have.</p>
+    <table>
+      <thead><tr><th>Score</th><th>How it reads</th></tr></thead>
+      <tbody>
+        <tr><td>90 to 100</td><td>Very easy. Short sentences and short words</td></tr>
+        <tr><td>70 to 90</td><td>Easy. Conversational writing</td></tr>
+        <tr><td>60 to 70</td><td>Plain English. A good target for most web writing</td></tr>
+        <tr><td>30 to 60</td><td>Fairly hard to hard. Common in business and academic text</td></tr>
+        <tr><td>0 to 30</td><td>Very hard. Dense legal or scientific writing</td></tr>
+      </tbody>
+    </table>
+    <p>The formula is 206.835 − (1.015 × words per sentence) − (84.6 × syllables per word). We count syllables with a simple rule, so treat the number as an estimate. Two different tools will rarely give exactly the same score.</p>
+
+    <h2>How to raise your score</h2>
+    <ul>
+      <li><strong>Split long sentences.</strong> Find the longest one in the results and break it at "and", "but" or "which".</li>
+      <li><strong>Use shorter words.</strong> "Use" for "utilize", "help" for "facilitate", "about" for "approximately". See our <a href="/guides/plain-language-swaps">list of plain-language swaps</a>.</li>
+      <li><strong>Cut filler phrases.</strong> "It is important to note that" adds seven words and no meaning.</li>
+      <li><strong>Put one idea in each sentence.</strong> If a sentence needs two commas and a dash, it's probably two sentences.</li>
+    </ul>
+    <p>AI drafts often score lower than they should, because they favor long words and stock phrases. The <a href="/">CleanDraft editor</a> removes many of those in one pass, and you can paste the result back here to compare.</p>
+
+    <h2>What the score can't tell you</h2>
+    <p>A readability formula counts. It doesn't understand. A text can score well and still be confusing, badly organized or wrong, and a text full of short nonsense words would score very well. Technical terms your readers know will also pull the score down unfairly. Use the number to spot long sentences and heavy wording, then judge the result by reading it aloud.</p>
+
+    <h2>Related tools</h2>
+    <ul>
+      <li><a href="/word-counter">Word counter</a></li>
+      <li><a href="/ai-phrase-checker">AI phrase checker</a></li>
+      <li><a href="/guides/why-ai-writing-sounds-robotic">Why AI writing sounds robotic</a></li>
+    </ul>
+  </article>
+</Base>

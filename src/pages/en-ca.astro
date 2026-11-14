@@ -1,0 +1,55 @@
+---
+import ToolPage from '../layouts/ToolPage.astro';
+
+const faq = [
+  ['Does it use Canadian or British spelling?', 'Canadian. It writes "colour" and "centre" as British English does, but keeps "organize", "analyze", "aluminum" and "math" as American English does. That mix is standard Canadian usage.'],
+  ['Can I switch to US spelling for an American client?', 'Yes. Change the English setting to US before you press Humanize. The setting applies to the whole text.'],
+  ['Does it edit French text?', 'No. The rules are written for English only. French passages will pass through unchanged, apart from any English phrases inside them.'],
+  ['Is my text sent outside Canada?', 'Your text isn\'t sent anywhere. The tool runs on your device, and our code never uploads what you paste.'],
+];
+---
+
+<ToolPage
+  title="AI Humanizer for Canadian English, Free | CleanDraft"
+  description="Free AI humanizer set to Canadian spelling. Removes stock AI phrasing, fixes American spellings like 'color' and 'center', and shows every edit. No signup."
+  h1="Free AI humanizer for Canadian English"
+  lede="AI assistants usually write in American English. This version removes the stock phrasing and puts your draft into Canadian spelling in the same pass."
+  placeholder="Paste your AI draft here. It will be edited into Canadian spelling."
+  variant="ca"
+  lang="en-CA"
+  faq={faq}
+>
+  <h2>Why Canadian writers need a different setting</h2>
+  <p>ChatGPT, Claude and Gemini tend to default to American spelling unless you tell them otherwise, and they often drift back to it in a long reply. For a Canadian reader, "color" and "center" in a report or a cover letter look like a slip. Canadian English is also harder to get right than British English, because it takes some spellings from each side: "colour" and "centre" from Britain, "organize" and "analyze" from the United States.</p>
+  <p>This page is the same editor as the <a href="/">main CleanDraft humanizer</a>, with the English setting fixed to Canadian when you arrive.</p>
+
+  <h2>Example</h2>
+  <blockquote><p><strong>Before:</strong> Furthermore, it is important to note that our organization utilizes a wide range of colors in order to honor the volunteers at the community center. We do not charge for the program.</p></blockquote>
+  <blockquote><p><strong>After:</strong> Our organization uses many colours to honour the volunteers at the community centre. We don't charge for the program.</p></blockquote>
+  <p>That's eight edits. Three are spelling, and "organization" and "program" are correctly left alone.</p>
+
+  <h2>What the Canadian setting changes</h2>
+  <table>
+    <thead><tr><th>American</th><th>Canadian</th><th>Changed?</th></tr></thead>
+    <tbody>
+      <tr><td>color, honor, neighbor</td><td>colour, honour, neighbour</td><td>Yes</td></tr>
+      <tr><td>center, theater, fiber</td><td>centre, theatre, fibre</td><td>Yes</td></tr>
+      <tr><td>traveled, canceled, labeled</td><td>travelled, cancelled, labelled</td><td>Yes</td></tr>
+      <tr><td>defense, catalog, gray</td><td>defence, catalogue, grey</td><td>Yes</td></tr>
+      <tr><td>organize, analyze, realize</td><td>organize, analyze, realize</td><td>No, same in Canada</td></tr>
+      <tr><td>aluminum, math, aging</td><td>aluminum, math, aging</td><td>No, same in Canada</td></tr>
+    </tbody>
+  </table>
+  <p>It works the other way too. If a draft has British forms such as "organise" or "maths", they become "organize" and "math". Each spelling change is listed in the edit log, so you can put back any you want to keep, such as a company name's own spelling.</p>
+
+  <h2>Tips for writing in Canada</h2>
+  <ul>
+    <li><strong>Check your house style.</strong> Government, newsrooms and universities each have a style guide, and they differ on a few words. The edit log makes it easy to revert a single spelling.</li>
+    <li><strong>Write dates in full.</strong> Canada uses more than one numeric date order, so "March 5, 2026" is clearer than "03/05/2026". The editor never changes dates.</li>
+    <li><strong>Mark your dollars.</strong> When readers may be in both countries, write "CAD" or "US$" once. Amounts are locked and stay as you wrote them.</li>
+    <li><strong>Mind bilingual text.</strong> The rules are English only, so check French passages yourself.</li>
+  </ul>
+
+  <h2>Students and workplaces</h2>
+  <p>Canadian universities, colleges and employers set their own rules on AI, and they vary between institutions and even between courses. Check your course outline or workplace policy before you use AI on work you'll submit, and read our guide on <a href="/guides/disclose-ai-use">using and disclosing AI honestly</a>. Because the tool runs on your device and uploads nothing, it suits drafts that include personal or client information you shouldn't paste into an online service.</p>
+</ToolPage>

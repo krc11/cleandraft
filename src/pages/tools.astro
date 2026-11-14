@@ -2,33 +2,27 @@
 import Base from '../layouts/Base.astro';
 ---
 
-<Base title="Free Writing Tools: Word Count, Readability, Stock Phrases | CleanDraft" description="Check a draft's word count, reading ease, sentence length and stock phrases. Free, no signup, and it runs on your device.">
+<Base title="Free Writing Tools: Humanizer, Word Counter and More | CleanDraft" description="Free writing tools that run on your device: an AI text humanizer, editors for emails, blog posts and cover letters, a word counter and a readability checker.">
   <article class="page">
     <h1>Free writing tools</h1>
-    <p class="lede">Editors that run on your device. Nothing to install, and no account.</p>
+    <p class="lede">Every tool here runs on your device. Nothing to install, no account, and your text is never uploaded.</p>
+    <h2>Editors for AI drafts</h2>
     <ul class="card-list">
-      <li><a href="/">Text humanizer</a><p>Removes stock AI phrasing and shows every edit.</p></li>
+      <li><a href="/">AI text humanizer</a><p>Removes stock AI phrasing and shows every edit.</p></li>
+      <li><a href="/humanize-chatgpt-text">ChatGPT text humanizer</a><p>Clean up the habits that ChatGPT drafts share.</p></li>
+      <li><a href="/en-ca">AI humanizer for Canadian English</a><p>Set to Canadian spelling, with notes for writers in Canada.</p></li>
+      <li><a href="/en-au">AI humanizer for Australian English</a><p>Set to Australian spelling, with notes for writers in Australia.</p></li>
       <li><a href="/ai-email-editor">Email editor</a><p>Clean up an AI-drafted email before you send it.</p></li>
       <li><a href="/ai-blog-post-editor">Blog post editor</a><p>Edit long drafts while keeping headings and lists in place.</p></li>
       <li><a href="/linkedin-post-editor">LinkedIn post editor</a><p>Remove the buzzwords that make posts sound alike.</p></li>
+      <li><a href="/cover-letter-editor">Cover letter editor</a><p>Make an AI-drafted cover letter sound like a person applying.</p></li>
+      <li><a href="/ai-essay-editor">Essay editor</a><p>Tidy the wording of your own essay draft, with citations locked.</p></li>
     </ul>
-    <h2 id="checker">Text checker</h2>
-    <p>Paste a draft to see its word count, reading ease and longest sentence, plus any stock phrases from our lexicon. This is editing help based on our own word lists. It isn't an AI detector, and it can't tell you who wrote a text.</p>
-    <label for="ck-input"><strong>Your text</strong></label>
-    <textarea id="ck-input" placeholder="Paste your draft here."></textarea>
-    <div class="stats" aria-live="polite">
-      <div><strong id="ck-words">0</strong>Words</div>
-      <div><strong id="ck-sentences">0</strong>Sentences</div>
-      <div><strong id="ck-avg">0</strong>Words per sentence</div>
-      <div><strong id="ck-long">0</strong>Longest sentence</div>
-      <div><strong id="ck-read">n/a</strong>Reading ease (estimate)</div>
-      <div><strong id="ck-hits">0</strong>Stock phrases</div>
-    </div>
-    <p class="hint">Reading ease is the Flesch score estimated from syllable counts: higher is easier, and 60 to 70 suits most general readers.</p>
-    <h3>Stock phrases found</h3>
-    <ul id="ck-list"><li>None yet.</li></ul>
+    <h2>Checkers</h2>
+    <ul class="card-list">
+      <li><a href="/ai-phrase-checker">AI phrase checker</a><p>Find the stock phrases that make a draft read like a template.</p></li>
+      <li><a href="/readability-checker">Readability checker</a><p>Get a Flesch reading ease score, sentence lengths and your longest sentence.</p></li>
+      <li><a href="/word-counter">Word counter</a><p>Count words, characters and sentences, with reading time.</p></li>
+    </ul>
   </article>
-  <script>
-    import '../scripts/checker.js';
-  </script>
 </Base>

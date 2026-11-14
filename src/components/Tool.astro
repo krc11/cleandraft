@@ -1,10 +1,10 @@
 ---
 import { WORD_LIMIT } from '../engine/limits.js';
 const limit = WORD_LIMIT.toLocaleString('en-US');
-const { placeholder = 'Paste your AI draft here.' } = Astro.props;
+const { placeholder = 'Paste your AI draft here.', variant } = Astro.props;
 ---
 
-<section class="tool-card" aria-label="Text editor" id="cd-tool">
+<section class="tool-card" aria-label="Text editor" id="cd-tool" data-variant={variant}>
   <div class="tool-col">
     <div class="pane-head">
       <label for="cd-input">Your text</label>

@@ -5,10 +5,13 @@ import { SITE } from '../../config.js';
 
 export async function getStaticPaths() {
   const modules = import.meta.glob('../../guides/*.md', { eager: true });
-  const all = Object.entries(modules).map(([path, mod]) => ({ slug: path.split('/').pop().replace('.md', ''), mod }));
-  return all.map(({ slug, mod }) => ({
+  const all = Object.entries(modules)
+    .map(([path, mod]) => ({ slug: path.split('/').pop().replace('.md', ''), mod }))
+    .sort((a, b) => a.mod.frontmatter.order - b.mod.frontmatter.order);
+  // Each guide links to the next four, wrapping round, so every guide gets links in.
+  return all.map(({ slug, mod }, i) => ({
     params: { slug },
-    props: { mod, related: all.filter((g) => g.slug !== slug).sort((a, b) => a.mod.frontmatter.order - b.mod.frontmatter.order).slice(0, 3) },
+    props: { mod, related: [1, 2, 3, 4].map((n) => all[(i + n) % all.length]) },
   }));
 }
 
@@ -17,7 +20,7 @@ const { Content, frontmatter: fm } = mod;
 const headings = mod.getHeadings().filter((h) => h.depth === 2);
 const url = `${SITE.url}/guides/${Astro.params.slug}`;
 const ld = [
-  { '@context': 'https://schema.org', '@type': 'Article', headline: fm.title, description: fm.description, dateModified: '2026-11-04', author: { '@type': 'Organization', name: SITE.name }, mainEntityOfPage: url },
+  { '@context': 'https://schema.org', '@type': 'Article', headline: fm.title, description: fm.description, datePublished: fm.published || SITE.updatedIso, dateModified: SITE.updatedIso, author: { '@type': 'Organization', name: SITE.name, url: `${SITE.url}/about` }, publisher: { '@type': 'Organization', name: SITE.name }, image: `${SITE.url}/og.png`, mainEntityOfPage: url },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -29,7 +32,7 @@ const ld = [
 ];
 ---
 
-<Base title={`${fm.title} | CleanDraft`} description={fm.description} jsonLd={ld}>
+<Base title={fm.title.length > 50 ? fm.title : `${fm.title} | CleanDraft`} description={fm.description} jsonLd={ld}>
   <article class="page">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/guides">Guides</a></nav>
     <h1>{fm.title}</h1>

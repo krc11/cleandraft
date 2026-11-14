@@ -1,0 +1,41 @@
+---
+import ToolPage from '../layouts/ToolPage.astro';
+
+const faq = [
+  ['Does this work with GPT-4, GPT-5 and other versions?', 'Yes. The editor works on the text, not the model. It looks for wording habits that drafts from ChatGPT and other assistants share, whichever version wrote them.'],
+  ['Does it also work for Claude, Gemini and Copilot text?', 'Yes. Assistants share many of the same habits, such as filler openers and inflated phrases, so the same rules apply.'],
+  ['Will my ChatGPT text pass an AI detector after this?', 'We make no promise about any detector. Their results vary and change often. This tool is built to make a draft read better to people.'],
+  ['Why not just ask ChatGPT to sound more human?', 'You can, and a good prompt helps. But a second pass can also change your facts or add new stock phrases, and it can\'t show you what it changed. This editor changes only what its rules catch and lists every edit.'],
+];
+---
+
+<ToolPage
+  title="Humanize ChatGPT Text Free, No Signup | CleanDraft"
+  description="Humanize ChatGPT text in seconds. Removes the stock phrases and stiff wording ChatGPT drafts share, and shows every edit. Free, no signup, on your device."
+  h1="Humanize ChatGPT text and see every edit"
+  lede="Paste a ChatGPT draft. The editor removes its stock phrases, loosens the stiff wording and lists each change so you can check it."
+  placeholder="Paste your ChatGPT draft here."
+  faq={faq}
+>
+  <h2>The habits ChatGPT drafts share</h2>
+  <p>Ask ChatGPT for a paragraph on almost anything and you'll see a family resemblance. Sentences open with "Moreover" and "Furthermore". Things "play a crucial role". Companies "leverage" tools to reach "a wide range of" people. The grammar is fine and the facts may be too, but readers recognize the pattern in a line or two and start to skim.</p>
+  <p>These habits are consistent, which is why a set of written rules can catch many of them.</p>
+
+  <h2>Example</h2>
+  <blockquote><p><strong>Before:</strong> Furthermore, it is important to note that remote work plays a crucial role in employee satisfaction. Companies that leverage flexible schedules are able to attract a wide range of candidates.</p></blockquote>
+  <blockquote><p><strong>After:</strong> Remote work matters for employee satisfaction. Companies that draw on flexible schedules can attract all kinds of candidates.</p></blockquote>
+  <p>That took five edits. The meaning is the same, and the text is about a third shorter.</p>
+
+  <h2>What the editor changes in a ChatGPT draft</h2>
+  <ul>
+    <li><strong>Filler openers</strong> such as "Moreover," and "Additionally," are removed or simplified.</li>
+    <li><strong>Stock phrases</strong> such as "it is important to note that" are cut.</li>
+    <li><strong>Stiff words</strong> such as "utilize" and "facilitate" become "use" and "help".</li>
+    <li><strong>Contractions</strong> are added, so "do not" becomes "don't" where it reads naturally.</li>
+    <li><strong>Em dashes</strong>, which ChatGPT uses heavily, become commas or a new sentence. Our guide to <a href="/guides/chatgpt-em-dash">ChatGPT and the em dash</a> explains more.</li>
+  </ul>
+
+  <h2>What you still need to do</h2>
+  <p>The editor cleans the surface. It can't supply what ChatGPT didn't have: your experience, your numbers and your opinion. After the edit, add one specific detail to each paragraph and cut any paragraph that could appear in anyone's article. And check the facts. ChatGPT can state wrong details with confidence, and no editing tool will catch that.</p>
+  <p>You can also get a better first draft. See our <a href="/guides/prompts-to-make-chatgpt-sound-human">prompts that make ChatGPT write more naturally</a>.</p>
+</ToolPage>

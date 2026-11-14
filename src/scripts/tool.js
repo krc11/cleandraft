@@ -277,6 +277,12 @@ el.download.addEventListener('click', () => {
 });
 
 for (const [key, control] of [['tone', el.tone], ['strength', el.strength], ['variant', el.variant]]) {
+  // A country page sets its own spelling, which wins over a saved choice or the locale.
+  const preset = key === 'variant' && $('cd-tool').dataset.variant;
+  if (preset) {
+    control.value = preset;
+    continue;
+  }
   const saved = store.get(`cd-${key}`);
   if (saved && [...control.options].some((o) => o.value === saved)) control.value = saved;
   else if (key === 'variant') control.value = guessVariant();

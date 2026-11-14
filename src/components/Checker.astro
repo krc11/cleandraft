@@ -1,0 +1,23 @@
+---
+const { placeholder = 'Paste your draft here.' } = Astro.props;
+---
+
+<label for="ck-input"><strong>Your text</strong></label>
+<textarea id="ck-input" placeholder={placeholder}></textarea>
+<div class="stats" aria-live="polite">
+  <div><strong id="ck-words">0</strong>Words</div>
+  <div><strong id="ck-chars">0</strong>Characters</div>
+  <div><strong id="ck-sentences">0</strong>Sentences</div>
+  <div><strong id="ck-avg">0</strong>Words per sentence</div>
+  <div><strong id="ck-long">0</strong>Longest sentence</div>
+  <div><strong id="ck-time">0 min</strong>Reading time</div>
+  <div><strong id="ck-read">n/a</strong>Reading ease (estimate)</div>
+  <div><strong id="ck-hits">0</strong>Stock phrases</div>
+</div>
+<p class="hint">Your text stays on this device. Reading ease is the Flesch score estimated from syllable counts, and reading time assumes 230 words a minute.</p>
+<h3>Stock phrases found</h3>
+<ul id="ck-list"><li>None yet.</li></ul>
+
+<script>
+  import '../scripts/checker.js';
+</script>

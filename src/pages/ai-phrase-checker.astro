@@ -1,0 +1,45 @@
+---
+import Base from '../layouts/Base.astro';
+import Checker from '../components/Checker.astro';
+import { SITE } from '../config.js';
+import { RULE_COUNTS } from '../engine/lexicon.js';
+const phrases = RULE_COUNTS.openers + RULE_COUNTS.stock;
+const ld = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'AI phrase checker', url: `${SITE.url}/ai-phrase-checker`, applicationCategory: 'WritingApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } };
+---
+
+<Base title="AI Phrase Checker: Find Overused ChatGPT Phrases | CleanDraft" description="Paste a draft to find stock phrases common in AI writing, such as 'it is important to note' and 'plays a crucial role'. Free editing help, not an AI detector." jsonLd={ld}>
+  <article class="page">
+    <h1>AI phrase checker</h1>
+    <p class="lede">Paste a draft to see which stock phrases it uses and how often. This is editing help. It isn't an AI detector, and it can't tell you who wrote a text.</p>
+    <Checker />
+
+    <h2>What it looks for</h2>
+    <p>The checker searches your text for {phrases} filler openers and stock phrases from the CleanDraft lexicon. They fall into a few groups:</p>
+    <ul>
+      <li><strong>Filler openers:</strong> "Moreover,", "Furthermore,", "Additionally,", "In conclusion,"</li>
+      <li><strong>Throat-clearing:</strong> "it is important to note that", "it is worth noting that"</li>
+      <li><strong>Inflated phrases:</strong> "plays a crucial role in", "a wide range of", "in order to"</li>
+      <li><strong>Scene-setting:</strong> "in today's fast-paced world", "in the ever-evolving landscape of"</li>
+      <li><strong>Buzz phrases:</strong> "unlock the full potential of", "a testament to", "delve into"</li>
+    </ul>
+
+    <h2>Why this isn't an AI detector</h2>
+    <p>People wrote every one of these phrases long before AI assistants existed, and assistants learned them from us. Finding ten of them proves nothing about who wrote a draft. It does tell you something useful: the text leans on wording that readers have seen many times, and they are likely to skim it.</p>
+    <p>So read the result as an editor would. A count of zero doesn't mean the writing is good, and one "moreover" in a long report is fine. Look for clusters.</p>
+
+    <h2>What to do with the results</h2>
+    <ol>
+      <li><strong>Delete first.</strong> Most throat-clearing phrases can go with no replacement.</li>
+      <li><strong>Then shorten.</strong> Swap inflated phrases for the plain word: "many" for "a wide range of", "to" for "in order to".</li>
+      <li><strong>Then get specific.</strong> When "plays a crucial role" goes, ask what the role actually is, and say that.</li>
+    </ol>
+    <p>To fix them in one pass, paste the same text into the <a href="/">CleanDraft editor</a>. It replaces these phrases, shows each edit with its reason, and lets you undo any one. For the full list with replacements, read <a href="/guides/ai-phrases-to-avoid">AI phrases to avoid</a>.</p>
+
+    <h2>Related tools</h2>
+    <ul>
+      <li><a href="/readability-checker">Readability checker</a></li>
+      <li><a href="/word-counter">Word counter</a></li>
+      <li><a href="/guides/chatgpt-em-dash">ChatGPT and the em dash</a></li>
+    </ul>
+  </article>
+</Base>

@@ -2,20 +2,32 @@
 import '../styles/global.css';
 import { SITE } from '../config.js';
 
-const { title, description, jsonLd = [], noindex = false } = Astro.props;
+const { title, description, jsonLd = [], noindex = false, lang = 'en' } = Astro.props;
 const path = Astro.url.pathname.replace(/\.html$/, '').replace(/\/$/, '').replace(/\/index$/, '');
-const canonical = `${SITE.url}${path}`;
-const graphs = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
+const canonical = `${SITE.url}${path || '/'}`;
+// The home tool page has country versions. Each one lists all of them, itself included.
+const REGIONS = { '': ['en', 'x-default'], '/en-ca': ['en-CA'], '/en-au': ['en-AU'] };
+const alternates = path in REGIONS ? Object.entries(REGIONS).flatMap(([p, codes]) => codes.map((code) => [code, `${SITE.url}${p || '/'}`])) : [];
+const ogImage = `${SITE.url}/og.png`;
+const graphs = Array.isArray(jsonLd) ? [...jsonLd] : [jsonLd];
+// The home page tells search engines who publishes the site.
+if (!path) {
+  graphs.push(
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
+    { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/favicon.svg`, email: SITE.contactEmail }
+  );
+}
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
+    {alternates.map(([code, href]) => <link rel="alternate" hreflang={code} href={href} />)}
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
@@ -23,6 +35,13 @@ const graphs = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
     {graphs.map((g) => <script type="application/ld+json" set:html={JSON.stringify(g)} />)}
   </head>
   <body>
@@ -45,8 +64,10 @@ const graphs = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
         <div>
           <h2>Guides</h2>
           <ul>
+            <li><a href="/guides/how-to-humanize-ai-text">How to humanize AI text</a></li>
             <li><a href="/guides/ai-phrases-to-avoid">AI phrases to avoid</a></li>
-            <li><a href="/guides/why-ai-writing-sounds-robotic">Why AI writing sounds robotic</a></li>
+            <li><a href="/guides/chatgpt-em-dash">ChatGPT and the em dash</a></li>
+            <li><a href="/guides/prompts-to-make-chatgpt-sound-human">Prompts for natural writing</a></li>
             <li><a href="/guides/ai-draft-editing-checklist">Editing checklist</a></li>
             <li><a href="/guides">All guides</a></li>
           </ul>
@@ -54,11 +75,18 @@ const graphs = Array.isArray(jsonLd) ? jsonLd : [jsonLd];
         <div>
           <h2>Tools</h2>
           <ul>
-            <li><a href="/">Text humanizer</a></li>
+            <li><a href="/">AI text humanizer</a></li>
+            <li><a href="/humanize-chatgpt-text">ChatGPT text humanizer</a></li>
+            <li><a href="/en-ca">Canadian English humanizer</a></li>
+            <li><a href="/en-au">Australian English humanizer</a></li>
             <li><a href="/ai-email-editor">Email editor</a></li>
             <li><a href="/ai-blog-post-editor">Blog post editor</a></li>
             <li><a href="/linkedin-post-editor">LinkedIn post editor</a></li>
-            <li><a href="/tools">Text checker</a></li>
+            <li><a href="/cover-letter-editor">Cover letter editor</a></li>
+            <li><a href="/ai-essay-editor">Essay editor</a></li>
+            <li><a href="/ai-phrase-checker">AI phrase checker</a></li>
+            <li><a href="/readability-checker">Readability checker</a></li>
+            <li><a href="/word-counter">Word counter</a></li>
           </ul>
         </div>
         <div>

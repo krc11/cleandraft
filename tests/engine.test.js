@@ -184,3 +184,18 @@ test('document length stays within 15%, and short dense drafts keep their filler
   const r = run(long, { strength: 'strong' });
   assert.ok(Math.abs(wc(r.output) - wc(long)) / wc(long) <= 0.15, r.output);
 });
+
+test('contractions keep sentence case', () => {
+  const seeds = Array.from({ length: 10 }, (_, i) => i + 1);
+  for (const seed of seeds) {
+    const out = run('I am writing to you today. We know that i am late and it is fine.', { seed }).output;
+    assert.doesNotMatch(out, /I'M|IT'S/);
+  }
+  assert.ok(seeds.some((seed) => run('I am writing to you today about the plan.', { seed }).output.startsWith("I'm writing")));
+});
+
+test('Canadian spelling follows US usage for math, aluminum, aging and fulfill', () => {
+  const text = 'The aluminium frame and the maths of ageing help us fulfil the plan for the colour centre.';
+  assert.match(run(text, { variant: 'ca' }).output, /aluminum frame and the math of aging help us fulfill the plan for the colour centre/);
+  assert.match(run('The aluminum frame and the math of aging help us fulfill the plan.', { variant: 'au' }).output, /aluminium frame and the maths of ageing help us fulfil/);
+});

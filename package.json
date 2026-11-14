@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "test": "node --test tests/engine.test.js",
     "test:golden:update": "node tests/update-golden.js",
-    "test:privacy": "node tests/privacy.test.js"
+    "test:privacy": "node tests/privacy.test.js",
+    "indexnow": "node scripts/indexnow.js"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.4",

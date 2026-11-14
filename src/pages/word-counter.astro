@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import Checker from '../components/Checker.astro';
+import { SITE } from '../config.js';
+const ld = { '@context': 'https://schema.org', '@type': 'WebApplication', name: 'Word counter', url: `${SITE.url}/word-counter`, applicationCategory: 'WritingApplication', operatingSystem: 'Any', offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' } };
+---
+
+<Base title="Free Word Counter: Characters and Reading Time | CleanDraft" description="Count words, characters and sentences as you type, with reading time and average sentence length. Free, no signup, and your text never leaves your device." jsonLd={ld}>
+  <article class="page">
+    <h1>Free word counter</h1>
+    <p class="lede">Paste or type your text. Words, characters, sentences and reading time update as you go, and nothing is uploaded.</p>
+    <Checker placeholder="Paste or type your text here." />
+
+    <h2>What gets counted</h2>
+    <ul>
+      <li><strong>Words</strong> are groups of characters separated by spaces or line breaks. A hyphenated term such as "well-known" counts as one word, the same as in most word processors.</li>
+      <li><strong>Characters</strong> include spaces and punctuation. This is the number that matters for social posts and form fields.</li>
+      <li><strong>Sentences</strong> end at a full stop, question mark or exclamation mark. Abbreviations such as "e.g." and "Dr." don't end a sentence.</li>
+      <li><strong>Reading time</strong> assumes 230 words a minute, which is a typical silent reading speed for adults. Reading aloud is slower, usually around 130 to 150 words a minute.</li>
+    </ul>
+
+    <h2>Common length limits</h2>
+    <p>Limits change, so check the platform before you rely on these.</p>
+    <table>
+      <thead><tr><th>Where</th><th>Typical limit</th></tr></thead>
+      <tbody>
+        <tr><td>Post on X</td><td>280 characters on a free account</td></tr>
+        <tr><td>LinkedIn post</td><td>3,000 characters</td></tr>
+        <tr><td>Text message (SMS)</td><td>160 characters before it splits</td></tr>
+        <tr><td>Search result description</td><td>About 150 to 160 characters before it's cut off</td></tr>
+        <tr><td>Five-minute speech</td><td>About 650 to 750 words</td></tr>
+      </tbody>
+    </table>
+
+    <h2>How to cut a draft to a word limit</h2>
+    <ol>
+      <li><strong>Cut whole points first.</strong> Removing your weakest paragraph saves more words than trimming every sentence, and the piece gets better.</li>
+      <li><strong>Delete the warm-up.</strong> Opening lines that restate the title or question can usually go.</li>
+      <li><strong>Shorten stock phrases.</strong> "In order to" becomes "to", and "due to the fact that" becomes "because". The <a href="/">editor</a> does this pass for you and shows each change.</li>
+      <li><strong>Check your longest sentence.</strong> The counter shows its length. A sentence over 35 words can usually be split or trimmed.</li>
+    </ol>
+
+    <h2>Related tools</h2>
+    <ul>
+      <li><a href="/readability-checker">Readability checker</a></li>
+      <li><a href="/ai-phrase-checker">AI phrase checker</a></li>
+      <li><a href="/guides/plain-language-swaps">Plain-language swaps: 40 stiff words and simpler options</a></li>
+    </ul>
+  </article>
+</Base>

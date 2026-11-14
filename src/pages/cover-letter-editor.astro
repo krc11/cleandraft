@@ -1,0 +1,39 @@
+---
+import ToolPage from '../layouts/ToolPage.astro';
+
+const faq = [
+  ['Is it OK to use AI for a cover letter?', 'Many applicants do, and many employers accept it, but some job ads ask you not to. Check the advert first. Either way, the facts in the letter must be true and the final version should sound like you.'],
+  ['Will it change my job title, company names or numbers?', 'No. Names, numbers, dates and quoted text are locked before any rule runs, and a separate check confirms they are unchanged.'],
+  ['Which settings suit a cover letter?', 'Professional tone with Balanced strength suits most letters. Use Formal for law, government or academic roles, where contractions can look out of place.'],
+];
+---
+
+<ToolPage
+  title="AI Cover Letter Humanizer, Free Editor | CleanDraft"
+  description="Make an AI-written cover letter sound like a person applying. Removes stock phrases and stiff wording, keeps your names and numbers, and shows every edit. Free."
+  h1="Make an AI cover letter sound like you"
+  lede="Paste your cover letter draft. The editor removes the stock phrasing recruiters see all day and keeps your names, dates and results exactly as written."
+  placeholder="Paste your cover letter here."
+  faq={faq}
+>
+  <h2>Why AI cover letters sound alike</h2>
+  <p>Assistants write cover letters from the same template: "I am writing to express my interest", a claim to "possess a wide range of skills", and a closing line about being "excited to contribute". A recruiter reading fifty applications sees those lines again and again. A letter that sounds like all the others gives them no reason to remember yours.</p>
+
+  <h2>Example</h2>
+  <blockquote><p><strong>Before:</strong> I am writing to express my interest in the Marketing Manager position at Northwind. Moreover, I possess a wide range of skills that I have utilized in order to deliver results. In my previous role, I spearheaded a campaign that increased sign-ups by 18%.</p></blockquote>
+  <blockquote><p><strong>After:</strong> I'm writing to express my interest in the Marketing Manager position at Northwind. Also, I have many skills that I have used to deliver results. In my previous role, I led a campaign that increased sign-ups by 18%.</p></blockquote>
+  <p>That's cleaner, and the job title, company and 18% are untouched. It still isn't a strong letter, because the middle sentence says nothing specific. That part is yours to fix.</p>
+
+  <h2>What to fix by hand</h2>
+  <ol>
+    <li><strong>Rewrite the first line.</strong> Open with why this company or this role, in a way that couldn't be sent to another employer.</li>
+    <li><strong>Replace claims with proof.</strong> Change "I have many skills" to one result with a number, as the last sentence in the example does.</li>
+    <li><strong>Match the advert.</strong> Use the two or three requirements the job ad stresses, in its own words.</li>
+    <li><strong>Check every fact.</strong> AI drafts can invent achievements. Anything in the letter may come up at interview.</li>
+    <li><strong>Keep it short.</strong> Three or four short paragraphs is plenty for most roles.</li>
+  </ol>
+
+  <h2>Set the spelling for the country</h2>
+  <p>If you're applying in the UK, Canada or Australia, set the English option to match. The editor will make spelling such as "organise" or "colour" consistent across the letter, which is an easy detail to miss in an AI draft that defaults to US spelling.</p>
+  <p>For more on sounding like yourself, read <a href="/guides/add-your-own-voice">how to add your own voice to an AI draft</a>.</p>
+</ToolPage>

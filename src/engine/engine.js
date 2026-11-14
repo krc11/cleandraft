@@ -370,7 +370,7 @@ function runContractions(ctx, blocks, rate) {
         if (!ctx.free(start, end)) continue;
         if (!contractionGuard(pair, text.slice(Math.max(b.start, start - 24), start), text.slice(end, Math.min(b.end, end + 30)))) continue;
         if (draw(seed, `ct:${pair[0]}`, start) >= rate) continue;
-        ctx.claim(start, end, matchCase(m[0].slice(0, 2), pair[1]), `ct-${pair[0].replace(' ', '-')}`, 'contraction');
+        ctx.claim(start, end, /^[A-Z]/.test(m[0]) ? capitalize(pair[1]) : pair[1], `ct-${pair[0].replace(' ', '-')}`, 'contraction');
       }
     }
   }
@@ -425,7 +425,7 @@ function runDashes(ctx, blocks, sentencesOf) {
       }
       for (const d of found) {
         const rest = text.slice(d.end, s.end);
-        if (CLAUSE_START.test(rest) && /[a-z]/.test(text[d.end]) && draw(seed, 'da-split', d.start) < 0.7 && ctx.free(d.start, d.end + 1)) {
+        if (CLAUSE_START.test(rest) && /[a-z]/.test(text[d.end]) && ctx.free(d.start, d.end + 1)) {
           ctx.claim(d.start, d.end + 1, `. ${text[d.end].toUpperCase()}`, 'da-sentence', 'dash');
         } else if (ctx.free(d.start, d.end)) {
           ctx.claim(d.start, d.end, ', ', 'da-comma', 'dash');

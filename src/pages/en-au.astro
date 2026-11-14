@@ -1,0 +1,57 @@
+---
+import ToolPage from '../layouts/ToolPage.astro';
+
+const faq = [
+  ['Is Australian spelling the same as British spelling here?', 'For the words this tool changes, yes: "colour", "centre", "organise", "travelled" and "maths". It leaves "program" alone, since that is the usual Australian spelling.'],
+  ['Does it add Australian slang?', 'No. It never adds words of its own. It removes stock phrasing, uses plainer words and matches spelling.'],
+  ['Can I switch to US spelling for an American audience?', 'Yes. Change the English setting to US before you press Humanize.'],
+  ['Is my text sent overseas?', 'Your text isn\'t sent anywhere. The tool runs on your device, and our code never uploads what you paste.'],
+];
+---
+
+<ToolPage
+  title="AI Humanizer for Australian English, Free | CleanDraft"
+  description="Free AI humanizer set to Australian spelling. Removes stock AI phrasing, turns 'organize' and 'color' into 'organise' and 'colour', and shows every edit."
+  h1="Free AI humanizer for Australian English"
+  lede="AI assistants usually write in American English. This version removes the stock phrasing and puts your draft into Australian spelling in the same pass."
+  placeholder="Paste your AI draft here. It will be edited into Australian spelling."
+  variant="au"
+  lang="en-AU"
+  faq={faq}
+>
+  <h2>Why Australian writers need a different setting</h2>
+  <p>ChatGPT, Claude and Gemini tend to default to American spelling unless you tell them otherwise, and they often drift back to it partway through a long reply. To an Australian reader, "organize" and "color" in a report, a job application or a uni assignment stand out straight away. Fixing them by hand across a long document is slow, and it's easy to miss one.</p>
+  <p>This page is the same editor as the <a href="/">main CleanDraft humanizer</a>, with the English setting fixed to Australian when you arrive.</p>
+
+  <h2>Example</h2>
+  <blockquote><p><strong>Before:</strong> Furthermore, it is important to note that our organization utilizes a wide range of colors in order to honor the volunteers at the community center. We do not charge for the program.</p></blockquote>
+  <blockquote><p><strong>After:</strong> Our organisation uses many colours to honour the volunteers at the community centre. We don't charge for the program.</p></blockquote>
+  <p>That's nine edits. Four are spelling, and "program" is correctly left alone.</p>
+
+  <h2>What the Australian setting changes</h2>
+  <table>
+    <thead><tr><th>American</th><th>Australian</th></tr></thead>
+    <tbody>
+      <tr><td>color, honor, neighbor</td><td>colour, honour, neighbour</td></tr>
+      <tr><td>organize, realize, analyze</td><td>organise, realise, analyse</td></tr>
+      <tr><td>center, theater, fiber</td><td>centre, theatre, fibre</td></tr>
+      <tr><td>traveled, canceled, labeled</td><td>travelled, cancelled, labelled</td></tr>
+      <tr><td>defense, catalog, gray</td><td>defence, catalogue, grey</td></tr>
+      <tr><td>math, aluminum, aging</td><td>maths, aluminium, ageing</td></tr>
+    </tbody>
+  </table>
+  <p>Each spelling change is listed in the edit log, so you can put back any you want to keep. Names are locked before any rule runs, so "World Health Organization" keeps its own spelling.</p>
+
+  <h2>Plain language is the Australian standard</h2>
+  <p>The Australian Government's <a href="https://www.stylemanual.gov.au/" rel="noopener">Style Manual</a> asks writers to use plain language: common words, short sentences and no padding. That is close to what this editor does. It swaps "utilise" for "use" and "in order to" for "to", and cuts filler such as "it is important to note that". If you write for government, health or education, a pass through the editor moves an AI draft toward that standard. You'll still need to check it against your agency's own guidance.</p>
+
+  <h2>Tips for writing in Australia</h2>
+  <ul>
+    <li><strong>Write dates day first.</strong> "5 March 2026" is the usual form. The editor never changes dates, so fix any American-style dates in your draft by hand.</li>
+    <li><strong>Mark your dollars.</strong> For readers overseas, write "A$" or "AUD" once. Amounts are locked and stay as you wrote them.</li>
+    <li><strong>Keep the tone direct.</strong> Australian workplace writing tends to be less formal than AI drafts are. The Natural tone adds contractions, which usually suits emails and internal documents.</li>
+  </ul>
+
+  <h2>Students and workplaces</h2>
+  <p>Australian universities, TAFEs and employers set their own rules on AI, and they vary between institutions and between units. Check your unit outline or workplace policy before you use AI on work you'll submit, and read our guide on <a href="/guides/disclose-ai-use">using and disclosing AI honestly</a>. Because the tool runs on your device and uploads nothing, it suits drafts that include personal or client information you shouldn't paste into an online service.</p>
+</ToolPage>

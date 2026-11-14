@@ -1,0 +1,39 @@
+---
+import ToolPage from '../layouts/ToolPage.astro';
+
+const faq = [
+  ['Is using this tool allowed at my school?', 'That depends on your school and your course. Some allow AI help with wording, some require you to disclose it, and some ban it. Check your syllabus and assignment brief, and ask your instructor if they are unclear.'],
+  ['Will it make my essay pass an AI detector?', 'We make no promise about any detector, and the tool isn\'t built for that. It tidies wording. If AI use isn\'t allowed on your assignment, editing the text doesn\'t change that.'],
+  ['Does it change my citations or quotes?', 'No. Quoted text, citations such as (Walker, 2017) or [12], numbers and names are locked before any rule runs, and a separate check confirms they are unchanged.'],
+  ['Does it write or extend essays?', 'No. It only edits words that are already there, and it adds no new content.'],
+];
+---
+
+<ToolPage
+  title="AI Essay Editor: Tidy Your Own Draft, Free | CleanDraft"
+  description="Tidy the wording of your own essay draft. Removes stock AI phrasing, keeps citations, quotes and numbers locked, and shows every edit. Free, no signup."
+  h1="Tidy the wording of your essay draft"
+  lede="For drafts where AI help is allowed. The editor removes stock phrasing, leaves citations and quotes untouched, and shows each change so the final wording is your decision."
+  placeholder="Paste your essay draft here."
+  faq={faq}
+>
+  <h2>Check your rules first</h2>
+  <p>Rules on AI differ between schools, courses and even assignments. Before you use any AI tool on work you'll submit, read the assignment brief and your institution's academic integrity policy. If AI help is allowed, you may need to say how you used it. Our guide on <a href="/guides/disclose-ai-use">using and disclosing AI honestly</a> covers what to check and how to word a disclosure.</p>
+  <p>This editor is for improving a draft that is yours to submit. It doesn't write essays, and we don't promise any result with a detector.</p>
+
+  <h2>What it does to an essay</h2>
+  <blockquote><p><strong>Before:</strong> In today's world, social media plays a pivotal role in shaping public opinion. Additionally, it is worth noting that numerous studies demonstrate a link between screen time and sleep (Walker, 2017). Consequently, schools should not ignore it.</p></blockquote>
+  <blockquote><p><strong>After:</strong> Today, social media is central to shaping public opinion. Numerous studies show a link between screen time and sleep (Walker, 2017). So schools should not ignore it.</p></blockquote>
+  <p>This example used Formal tone, which adds no contractions. The citation is unchanged, and so is the argument.</p>
+
+  <h2>Settings for academic writing</h2>
+  <ul>
+    <li><strong>Formal tone</strong> keeps "do not" and "it is" in full, which most academic styles expect.</li>
+    <li><strong>Light or Balanced strength</strong> is the safer choice. Strong also swaps adjectives, and a word like "significant" can be a technical term in your field.</li>
+    <li><strong>English</strong> should match your institution: UK, Canadian, Australian or US spelling.</li>
+  </ul>
+  <p>Read the edit log before you accept the result. If an edit changes a term your subject uses precisely, press "This edit is wrong" to put it back.</p>
+
+  <h2>What makes an essay yours</h2>
+  <p>Cleaner wording doesn't earn marks by itself. What does is the thinking: a clear position, evidence you have read and understood, and your own analysis of it. Use the time the editor saves to check every source yourself, since AI tools can invent citations, and to make sure each paragraph says something you can defend if asked.</p>
+</ToolPage>

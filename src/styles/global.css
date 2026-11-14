@@ -236,3 +236,7 @@ button[aria-pressed='true'] { background: #000; border-color: #000; color: #fff;
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* Copyable prompts and code samples in guides */
+pre { background: var(--surface); border-radius: var(--radius); padding: 14px 16px; margin: 1.25rem 0; overflow-x: auto; font-size: 0.85em; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+pre code { background: none; padding: 0; font-size: 1em; }

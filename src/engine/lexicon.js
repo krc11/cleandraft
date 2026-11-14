@@ -1,6 +1,6 @@
 // CleanDraft lexicon. Bump LEXICON_VERSION on any rule change: output is
 // reproducible from text, settings, seed and lexicon version.
-export const LEXICON_VERSION = '1.0.0';
+export const LEXICON_VERSION = '1.0.3';
 
 // Options: '' removes the phrase. A leading '~' marks an option Formal skips.
 // `when` is an optional guard, called with { before, after } (the surrounding text).
@@ -325,8 +325,8 @@ const pairs = [
   ['defense', 'defence'], ['offense', 'offence'], ['pretense', 'pretence'], ['catalog', 'catalogue'], ['catalogs', 'catalogues'], ['dialog', 'dialogue'],
   ['traveled', 'travelled'], ['traveling', 'travelling'], ['traveler', 'traveller'], ['travelers', 'travellers'], ['canceled', 'cancelled'], ['canceling', 'cancelling'],
   ['labeled', 'labelled'], ['labeling', 'labelling'], ['modeled', 'modelled'], ['modeling', 'modelling'], ['fueled', 'fuelled'], ['fueling', 'fuelling'],
-  ['signaling', 'signalling'], ['counselor', 'counsellor'], ['jewelry', 'jewellery'], ['enrollment', 'enrolment'], ['fulfill', 'fulfil'], ['fulfillment', 'fulfilment'],
-  ['skillful', 'skilful'], ['gray', 'grey'], ['aluminum', 'aluminium'], ['mold', 'mould'], ['plow', 'plough'], ['aging', 'ageing'], ['math', 'maths'],
+  ['signaling', 'signalling'], ['counselor', 'counsellor'], ['jewelry', 'jewellery'], ['enrollment', 'enrolment'], ['fulfill', 'fulfil', 'fulfill'], ['fulfillment', 'fulfilment', 'fulfillment'],
+  ['skillful', 'skilful'], ['gray', 'grey'], ['aluminum', 'aluminium', 'aluminum'], ['mold', 'mould'], ['plow', 'plough', 'plow'], ['aging', 'ageing', 'aging'], ['math', 'maths', 'math'],
 ];
 
 const buildSpelling = () => {
@@ -356,7 +356,8 @@ const buildSpelling = () => {
     }
   }
   for (const [u, b] of reWords) for (const s of ['', 's']) add(`${u}${s}`, `${b}${s}`);
-  for (const [u, b] of pairs) add(u, b);
+  // A third entry is the Canadian form where it follows US usage, not British.
+  for (const [u, b, c] of pairs) add(u, b, c);
   return { us, uk, au: uk, ca };
 };
 export const SPELLING = buildSpelling();

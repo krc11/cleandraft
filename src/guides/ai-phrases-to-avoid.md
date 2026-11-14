@@ -63,4 +63,4 @@ Keep a technical term if your field uses it exactly. "Robust" means something sp
 
 ## How to use this list
 
-Don't turn it into a banned-word list. A single "moreover" in a long piece is fine. Search your draft for clusters, because that's where it starts to read like a template. Our [text checker](/tools#checker) counts stock phrases for you, and the [editor](/) can fix most of them while logging each change.
+Don't turn it into a banned-word list. A single "moreover" in a long piece is fine. Search your draft for clusters, because that's where it starts to read like a template. Our [AI phrase checker](/ai-phrase-checker) counts stock phrases for you, and the [editor](/) can fix most of them while logging each change.

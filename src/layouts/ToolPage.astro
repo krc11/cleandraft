@@ -4,12 +4,25 @@ import Tool from '../components/Tool.astro';
 import AdSlot from '../components/AdSlot.astro';
 import { SITE } from '../config.js';
 
-const { title, description, h1, lede, placeholder, faq = [] } = Astro.props;
+const { title, description, h1, lede, placeholder, faq = [], variant, lang } = Astro.props;
+const here = Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '') || '/';
+const editors = [
+  ['/', 'AI text humanizer'],
+  ['/humanize-chatgpt-text', 'ChatGPT text humanizer'],
+  ['/ai-email-editor', 'AI email editor'],
+  ['/ai-blog-post-editor', 'AI blog post editor'],
+  ['/linkedin-post-editor', 'LinkedIn post editor'],
+  ['/cover-letter-editor', 'AI cover letter editor'],
+  ['/ai-essay-editor', 'AI essay editor'],
+  ['/ai-phrase-checker', 'AI phrase checker'],
+  ['/en-ca', 'AI humanizer for Canadian English'],
+  ['/en-au', 'AI humanizer for Australian English'],
+];
 const app = {
   '@context': 'https://schema.org',
   '@type': 'WebApplication',
-  name: SITE.name,
-  url: `${SITE.url}${Astro.url.pathname.replace(/\.html$/, '').replace(/\/index$/, '')}`,
+  name: h1,
+  url: `${SITE.url}${here}`,
   applicationCategory: 'WritingApplication',
   operatingSystem: 'Any',
   browserRequirements: 'Requires JavaScript',
@@ -24,14 +37,14 @@ const faqLd = faq.length
   : null;
 ---
 
-<Base title={title} description={description} jsonLd={faqLd ? [app, faqLd] : [app]}>
+<Base title={title} description={description} lang={lang} jsonLd={faqLd ? [app, faqLd] : [app]}>
   <div class="tool-wrap">
     <header class="hero">
       <p class="kicker">Free. No signup. Runs on your device.</p>
       <h1>{h1}</h1>
       <p class="lede">{lede}</p>
     </header>
-    <Tool placeholder={placeholder} />
+    <Tool placeholder={placeholder} variant={variant} />
     <ul class="promises">
       <li><strong>Every edit shown</strong><span>See each change and the rule behind it, then undo any one you disagree with.</span></li>
       <li><strong>Facts stay put</strong><span>Numbers, names, links, quotes and citations are locked before any rule runs.</span></li>
@@ -55,8 +68,13 @@ const faqLd = faq.length
       )
     }
     <AdSlot slot="D" />
+    <h2>More free editors</h2>
+    <ul>
+      {editors.filter(([href]) => href !== here).map(([href, label]) => <li><a href={href}>{label}</a></li>)}
+    </ul>
     <h2>Keep reading</h2>
     <ul>
+      <li><a href="/guides/how-to-humanize-ai-text">How to humanize AI text by hand, step by step</a></li>
       <li><a href="/guides/ai-phrases-to-avoid">AI phrases to avoid, and what to write instead</a></li>
       <li><a href="/guides/ai-draft-editing-checklist">A 10-point checklist for editing an AI draft</a></li>
       <li><a href="/how-it-works">How the editor works, rule by rule</a></li>

@@ -24,6 +24,8 @@ function update() {
   const total = (text.match(/[A-Za-z’'-]+/g) || []).reduce((n, w) => n + syllables(w), 0);
 
   $('ck-words').textContent = words.toLocaleString('en-US');
+  $('ck-chars').textContent = text.length.toLocaleString('en-US');
+  $('ck-time').textContent = words ? `${Math.max(1, Math.round(words / 230))} min` : '0 min';
   $('ck-sentences').textContent = sentences.length;
   $('ck-avg').textContent = sentences.length ? (words / sentences.length).toFixed(1) : '0';
   $('ck-long').textContent = lengths.length ? Math.max(...lengths) : 0;

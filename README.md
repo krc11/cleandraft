@@ -46,3 +46,13 @@ Only after approval:
 3. Widen the `Content-Security-Policy` in `public/_headers` to allow Google's ad domains and inline styles, because the strict policy blocks them. Copy the same policy into `tests/privacy.test.js` only if ads are enabled in that test.
 4. Turn on Google's consent message in AdSense for the EEA, UK and Switzerland.
 5. Block essay-writing services and competing humanizers in AdSense blocking controls.
+
+## After each deploy
+
+Tell Bing and other IndexNow search engines which pages changed:
+
+```bash
+npm run indexnow
+```
+
+Google does not use IndexNow. For Google, submit the sitemap once in Search Console and use URL Inspection to request indexing of new pages.
