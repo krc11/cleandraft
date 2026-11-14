@@ -28,7 +28,7 @@ npm run test:privacy
 - `src/scripts/tool.js`: tool UI. `analytics.js` only lets allowlisted fields out
 - `src/guides/`: guides in Markdown
 - `src/config.js`: contact email, editor name, AdSense ids, analytics URL
-- `public/_headers`: security headers for Cloudflare Pages
+- `astro.config.mjs`: also writes the security headers file and `ads.txt` at build time
 
 ## Deploy to Cloudflare Pages
 
@@ -39,12 +39,10 @@ npm run test:privacy
 
 ## Turning on AdSense
 
-Only after approval:
-
-1. Set `adsenseClient` and `adSlots` in `src/config.js`.
-2. Add `public/ads.txt` with your seller id.
-3. Widen the `Content-Security-Policy` in `public/_headers` to allow Google's ad domains and inline styles, because the strict policy blocks them. Copy the same policy into `tests/privacy.test.js` only if ads are enabled in that test.
-4. Turn on Google's consent message in AdSense for the EEA, UK and Switzerland.
+1. Sign up for AdSense and copy your publisher id (`ca-pub-...`).
+2. Set `adsenseClient` in `src/config.js` and deploy. This adds the ownership meta tag and `ads.txt`, and switches the security policy to one that lets Google's code run. In AdSense, verify the site with the **Meta tag** or **Ads.txt** method.
+3. After approval, create four display ad units, put their ids in `adSlots` (A to D) and deploy. Keep Auto ads off, or at least turn off anchor and vignette formats.
+4. Turn on Google's consent message in AdSense (Privacy & messaging) for the EEA, UK and Switzerland.
 5. Block essay-writing services and competing humanizers in AdSense blocking controls.
 
 ## After each deploy

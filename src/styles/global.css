@@ -71,6 +71,7 @@ th, td { border-bottom: 1px solid var(--border); padding: 0.6rem 1.25rem 0.6rem 
 .kicker { font-size: 0.74rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); margin: 0 0 0.5rem; }
 .lede { color: var(--muted); margin: 0 0 1rem; }
 .hero .lede { margin: 0; }
+.byline a { color: var(--muted); }
 .byline { color: var(--muted); font-size: 0.9em; margin: 0 0 1.5rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
 .crumbs { font-size: 0.9em; color: var(--muted); margin-bottom: 0.75rem; }
 .crumbs a { color: var(--muted); }

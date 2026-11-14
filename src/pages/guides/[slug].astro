@@ -20,7 +20,7 @@ const { Content, frontmatter: fm } = mod;
 const headings = mod.getHeadings().filter((h) => h.depth === 2);
 const url = `${SITE.url}/guides/${Astro.params.slug}`;
 const ld = [
-  { '@context': 'https://schema.org', '@type': 'Article', headline: fm.title, description: fm.description, datePublished: fm.published || SITE.updatedIso, dateModified: SITE.updatedIso, author: { '@type': 'Organization', name: SITE.name, url: `${SITE.url}/about` }, publisher: { '@type': 'Organization', name: SITE.name }, image: `${SITE.url}/og.png`, mainEntityOfPage: url },
+  { '@context': 'https://schema.org', '@type': 'Article', headline: fm.title, description: fm.description, datePublished: fm.published || SITE.updatedIso, dateModified: SITE.updatedIso, author: { '@type': 'Person', name: SITE.editor, url: `${SITE.url}/about`, sameAs: Object.values(SITE.editorLinks) }, publisher: { '@type': 'Organization', name: SITE.name }, image: `${SITE.url}/og.png`, mainEntityOfPage: url },
   {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
@@ -36,7 +36,7 @@ const ld = [
   <article class="page">
     <nav class="crumbs" aria-label="Breadcrumb"><a href="/guides">Guides</a></nav>
     <h1>{fm.title}</h1>
-    <p class="byline">By {SITE.editor}. Last updated {SITE.updated}.</p>
+    <p class="byline">By <a href="/about#editor">{SITE.editor}</a>. Last updated {SITE.updated}.</p>
     <nav class="toc" aria-label="Contents">
       <strong>In this guide</strong>
       <ul>{headings.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}</ul>

@@ -14,7 +14,7 @@ const graphs = Array.isArray(jsonLd) ? [...jsonLd] : [jsonLd];
 if (!path) {
   graphs.push(
     { '@context': 'https://schema.org', '@type': 'WebSite', name: SITE.name, url: `${SITE.url}/` },
-    { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/favicon.svg`, email: SITE.contactEmail }
+    { '@context': 'https://schema.org', '@type': 'Organization', name: SITE.name, url: `${SITE.url}/`, logo: `${SITE.url}/favicon.svg`, email: SITE.contactEmail, founder: { '@type': 'Person', name: SITE.editor, sameAs: Object.values(SITE.editorLinks) } }
   );
 }
 ---
@@ -29,6 +29,7 @@ if (!path) {
     <link rel="canonical" href={canonical} />
     {alternates.map(([code, href]) => <link rel="alternate" hreflang={code} href={href} />)}
     {noindex && <meta name="robots" content="noindex" />}
+    {SITE.adsenseClient && <meta name="google-adsense-account" content={SITE.adsenseClient} />}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />

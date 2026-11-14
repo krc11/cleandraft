@@ -36,9 +36,9 @@ Most humanizers are the first type. [CleanDraft](/) is the second. Neither is be
 - **Fix a weak argument.** Better wording on a thin idea is still a thin idea.
 - **Change who wrote it.** Editing doesn't turn AI-generated work into your own work for the purposes of a school or employer's rules.
 
-## Do they get past AI detectors?
+## What about AI detectors?
 
-Many humanizers advertise this. Be skeptical of any tool that promises it.
+Many humanizers advertise that their output will get past AI detectors. Be skeptical of any tool that promises it.
 
 AI detectors estimate how likely it is that text was machine-written, and they make mistakes in both directions, including flagging text that people wrote. Detectors are updated regularly, so a tool that changed a score last month may not this month. A promise of "100% undetectable" isn't one anyone can keep.
 
